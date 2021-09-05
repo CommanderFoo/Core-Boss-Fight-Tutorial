@@ -23,11 +23,19 @@ local isCharging = false
 
 local generatorsDisabled = 0
 
-local function getRandomTarget()
+local function GetRandomTarget()
 	return shootTargets[math.random(#shootTargets)]
 end
 
-local function shootProjectile()
+local function GetDamageable(obj)
+	if(obj:IsA("Damageable")) then
+		return obj
+	else
+		return obj:FindAncestorByType("Damageable")
+	end
+end
+
+local function ShootProjectile()
 	if(isCharging) then
 		return
 	end
@@ -52,18 +60,29 @@ local function shootProjectile()
 		if(Object.IsValid(obj)) then
 			
 			local results = World.SpherecastAll(hit:GetImpactPosition(), hit:GetImpactPosition() + Vector3.UP, 500, { shouldDebugRender = true })
+			
 			CoreDebug.DrawSphere(hit:GetImpactPosition(), 500, { duration = 1 })
 
 			for index, result in ipairs(results) do
-				if(Object.IsValid(result.other) and result.other:IsA("Player")) then
-					Events.BroadcastToPlayer(result.other, "ShakeScreen", .8, 4.6)
-
+				if(Object.IsValid(result.other)) then
 					local damage = Damage.New()
 
-					damage.amount = 25
 					damage.reason = DamageReason.NPC
 
-					result.other:ApplyDamage(damage)
+					if(result.other:IsA("Player")) then
+						Events.BroadcastToPlayer(result.other, "ShakeScreen", .8, 4.6)
+						damage.amount = 25
+					
+						--result.other:ApplyDamage(damage)
+					else
+						local damageable = GetDamageable(result.other)
+						
+						if(Object.IsValid(damageable)) then
+							damage.amount = 100
+
+							damageable:ApplyDamage(damage)
+						end
+					end
 				end
 			end
 		end
@@ -101,7 +120,7 @@ end
 function activities.shoot.tickHighestPriority(activity, deltaTime)
 	if Object.IsValid(target) then
 		if(not hasShot) then
-			shootProjectile()
+			ShootProjectile()
 		elseif(not isCharging) then
 			if(randomCooldown == 0) then
 				randomCooldown = math.random(shootCooldownMin, shootCooldownMax)
@@ -110,7 +129,7 @@ function activities.shoot.tickHighestPriority(activity, deltaTime)
 			shootElapsed = shootElapsed + deltaTime
 
 			if shootElapsed >= randomCooldown and hasShot then
-				target = getRandomTarget()
+				target = GetRandomTarget()
 				
 				if(Object.IsValid(target)) then
 					BOSS:LookAtContinuous(target, false, 2.0)
@@ -125,7 +144,7 @@ function activities.shoot.tickHighestPriority(activity, deltaTime)
 end
 
 function activities.shoot.start(activity, deltaTime)
-	local tmpTarget = getRandomTarget()
+	local tmpTarget = GetRandomTarget()
 	BOSS:LookAtContinuous(tmpTarget, false, .5)
 	Task.Wait(1)
 	target = tmpTarget

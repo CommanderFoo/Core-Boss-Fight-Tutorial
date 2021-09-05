@@ -1,22 +1,4 @@
 Assets {
-  Id: 18016206616273084009
-  Name: "Sci-fi Antenna Mast 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_scf_antenna_mast_002"
-  }
-}
-Assets {
-  Id: 17926871679773168913
-  Name: "Sci-fi Energy Generator Drone 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_scifi_energy_generator_drone_01_Cue_ref"
-  }
-}
-Assets {
   Id: 17752922220810090467
   Name: "Energy Charge Up Start VFX"
   PlatformAssetType: 8
@@ -32,6 +14,24 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_SunLight"
+  }
+}
+Assets {
+  Id: 14109784412959816922
+  Name: "Sci-fi Ship Light 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_scf_ship_light_001_ref"
+  }
+}
+Assets {
+  Id: 14062650596760156959
+  Name: "Sci-fi Cockpit Siderail 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_scf_ship_cockpit_siderail_001_ref"
   }
 }
 Assets {
@@ -62,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13114847352832521924
+  Name: "Sci-fi Base Wall Interior 01 - Window 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_scf_base_wall_int_001_win_01_ref"
+  }
+}
+Assets {
   Id: 13086189298900462636
   Name: "Sci-fi Base Railing 02 Stairs"
   PlatformAssetType: 1
@@ -77,15 +86,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_scf_base_stairs_001_ref"
-  }
-}
-Assets {
-  Id: 12273367428402804606
-  Name: "Sci-fi Antenna Ledge"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_scf_antenna_ledge_001"
   }
 }
 Assets {
@@ -107,30 +107,12 @@ Assets {
   }
 }
 Assets {
-  Id: 10887845554140079059
-  Name: "Capsule"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_capsule_001"
-  }
-}
-Assets {
   Id: 10825356562241087190
   Name: "Star Dome"
   PlatformAssetType: 19
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_StarDome"
-  }
-}
-Assets {
-  Id: 10280074408105187427
-  Name: "Sci-fi Antenna Structure"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_scf_antenna_structure_001"
   }
 }
 Assets {
@@ -179,21 +161,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7680406573567243590
-  Name: "Point To Point Electrical Beam VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_ptp_electrical_beam"
-  }
-}
-Assets {
-  Id: 7292207466018032959
-  Name: "Sci-fi Antenna Base"
+  Id: 7670073370455677982
+  Name: "Sci-fi Base Wall Interior 01 - Doorway 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_scf_antenna_base_001"
+    AssetId: "sm_ts_scf_base_wall_int_001_door_01_ref"
   }
 }
 Assets {
@@ -203,6 +176,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_scf_chair_001_arms_ref"
+  }
+}
+Assets {
+  Id: 6201098066527333077
+  Name: "Sci-fi Base Stairs 01 150cm"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_scf_base_stairs_001_150cm_ref"
   }
 }
 Assets {
@@ -239,15 +221,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ring_faceted_lg_001_ref"
-  }
-}
-Assets {
-  Id: 4159095847649120125
-  Name: "Sci-fi Console Screen 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_scifi_screen_001_ref"
   }
 }
 Assets {
