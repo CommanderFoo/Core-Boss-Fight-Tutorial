@@ -2,7 +2,8 @@ local ACTIVITY_HANDLER = script.parent
 local BOSS = script:GetCustomProperty("boss"):WaitForObject()
 local SHOOT_TRIGGER = script:GetCustomProperty("ShootTrigger"):WaitForObject()
 local PROJECTILE = script:GetCustomProperty("Projectile")
-local propShootPosition = script:GetCustomProperty("ShootPosition"):WaitForObject()
+local SHOOT_POSITION = script:GetCustomProperty("ShootPosition"):WaitForObject()
+local DAMAGEABLE = script:GetCustomProperty("Damageable"):WaitForObject()
 
 local activities = {
 
@@ -42,11 +43,15 @@ local function ShootProjectile()
 
 	isCharging = true
 
-	local startPos = propShootPosition:GetWorldPosition()
+	local startPos = SHOOT_POSITION:GetWorldPosition()
 
 	Events.BroadcastToAllPlayers("PlayChargeUpEffect")
 
 	Task.Wait(.5)
+
+	if(not Object.IsValid(BOSS)) then
+		return
+	end
 
 	local direction = BOSS:GetWorldRotation() * Vector3.FORWARD
 	local theProjectile = Projectile.Spawn(PROJECTILE, startPos, direction)
@@ -59,7 +64,7 @@ local function ShootProjectile()
 	theProjectile.impactEvent:Connect(function(projectile, obj, hit)
 		if(Object.IsValid(obj)) then
 			
-			local results = World.FindObjectsOverlappingSphere(hit:GetImpactPosition(), 500)
+			local results = World.FindObjectsOverlappingSphere(hit:GetImpactPosition(), 500, { ignoreObjects = {BOSS}})
 			
 			CoreDebug.DrawSphere(hit:GetImpactPosition(), 500, { duration = 1 })
 
@@ -163,7 +168,7 @@ function OnPlayerLeftShoot(trigger, player)
 			if(value == player) then
 				table.remove(shootTargets, index)
 
-				if(target == player) then
+				if(target == player and Object.IsValid(BOSS)) then
 					BOSS:StopRotate()
 				end
 
@@ -172,6 +177,14 @@ function OnPlayerLeftShoot(trigger, player)
 		end
 	end
 end
+
+DAMAGEABLE.damagedEvent:Connect(function(obj, damage)
+	Events.BroadcastToPlayer(damage.sourcePlayer, "ShowDamage", damage.amount, false)
+end)
+
+DAMAGEABLE.diedEvent:Connect(function()
+	Events.BroadcastToAllPlayers("PlayVictoryMusic")
+end)
 
 SHOOT_TRIGGER.beginOverlapEvent:Connect(OnPlayerEnterShoot)
 SHOOT_TRIGGER.endOverlapEvent:Connect(OnPlayerLeftShoot)
@@ -183,5 +196,8 @@ end
 Events.Connect("GeneratorDisabled", function()
 	generatorsDisabled = generatorsDisabled + 1
 
-	print(generatorsDisabled)
+	if(generatorsDisabled == 1) then
+		DAMAGEABLE.isInvulnerable = false
+		Events.BroadcastToAllPlayers("EnableHealthBar")
+	end
 end)

@@ -15,12 +15,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 15708467939281100699
         ChildIds: 860664015803284404
         ChildIds: 16973427722735305641
         ChildIds: 4796257732949939545
         ChildIds: 16038886225363227872
-        ChildIds: 3257635177392229069
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -189,6 +188,7 @@ Assets {
         }
         ParentId: 2498656413715139508
         ChildIds: 13458784629231137959
+        ChildIds: 11620458686701108955
         ChildIds: 16942550032453857353
         ChildIds: 5755705326420436728
         WantsNetworking: true
@@ -592,6 +592,41 @@ Assets {
         }
       }
       Objects {
+        Id: 11620458686701108955
+        Name: "Effect Target"
+        Transform {
+          Location {
+            X: -175.68602
+            Y: 4800
+            Z: 928.861206
+          }
+          Rotation {
+            Yaw: 179.999954
+          }
+          Scale {
+            X: 7.54502439
+            Y: 7.54506493
+            Z: 7.54506493
+          }
+        }
+        ParentId: 16038886225363227872
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
         Id: 16942550032453857353
         Name: "Effects / Audio"
         Transform {
@@ -646,7 +681,7 @@ Assets {
           Overrides {
             Name: "bp:Target Scene Object Reference"
             ObjectReference {
-              SelfId: 4475467819298500538
+              SubObjectId: 11620458686701108955
             }
           }
           Overrides {
@@ -829,49 +864,6 @@ Assets {
         Script {
           ScriptAsset {
             Id: 15018966891438404422
-          }
-        }
-      }
-      Objects {
-        Id: 3257635177392229069
-        Name: "ShieldGeneratorServer"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Yaw: -179.999954
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 2498656413715139508
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Trigger"
-            ObjectReference {
-              SubObjectId: 4796257732949939545
-            }
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 8881215439123804263
           }
         }
       }

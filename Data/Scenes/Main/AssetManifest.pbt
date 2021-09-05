@@ -1,13 +1,4 @@
 Assets {
-  Id: 18123443093604083044
-  Name: "Sci-fi Barrel 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_scf_barrel_001_ref"
-  }
-}
-Assets {
   Id: 17752922220810090467
   Name: "Energy Charge Up Start VFX"
   PlatformAssetType: 8
@@ -23,6 +14,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_SunLight"
+  }
+}
+Assets {
+  Id: 14726706108537705299
+  Name: "Sci-fi Console Screen 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_scf_screen_004_ref"
   }
 }
 Assets {
@@ -89,12 +89,30 @@ Assets {
   }
 }
 Assets {
+  Id: 12983069849220214272
+  Name: "Sci-fi Cargo Crate 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_scf_crate_cargo_002"
+  }
+}
+Assets {
   Id: 12879478581620426705
   Name: "Sci-fi Base Stairs 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_scf_base_stairs_001_ref"
+  }
+}
+Assets {
+  Id: 12637642648886921433
+  Name: "Sci-fi Console Screen 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_scf_screen_003_ref"
   }
 }
 Assets {
@@ -257,6 +275,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ring_faceted_lg_001_ref"
+  }
+}
+Assets {
+  Id: 1762331846753480693
+  Name: "Sci-fi Cargo Crate 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_scf_crate_cargo_001"
   }
 }
 Assets {

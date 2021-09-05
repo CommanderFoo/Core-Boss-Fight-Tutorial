@@ -9,7 +9,7 @@ Events.Connect("ShowDamage", function(damageAmount, isImmune)
 
 		})
 	else
-		UI.ShowFlyUpText("damageAmount", FLYUP_POSITION:GetWorldPosition(), {
+		UI.ShowFlyUpText(tostring(damageAmount), FLYUP_POSITION:GetWorldPosition(), {
 
 			isBig = true,
 			color = Color.YELLOW
