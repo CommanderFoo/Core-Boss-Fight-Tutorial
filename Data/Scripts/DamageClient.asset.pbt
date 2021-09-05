@@ -1,6 +1,6 @@
 Assets {
   Id: 3819432306566039440
-  Name: "PlayerClient"
+  Name: "DamageClient"
   PlatformAssetType: 3
   TextAsset {
   }

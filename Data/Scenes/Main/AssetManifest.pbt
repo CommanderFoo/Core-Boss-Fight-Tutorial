@@ -1,4 +1,13 @@
 Assets {
+  Id: 18123443093604083044
+  Name: "Sci-fi Barrel 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_scf_barrel_001_ref"
+  }
+}
+Assets {
   Id: 17752922220810090467
   Name: "Energy Charge Up Start VFX"
   PlatformAssetType: 8
@@ -107,6 +116,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11351570077880070872
+  Name: "Sci-fi Ability Blue 015"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_SciFi_Ability_Blue_015"
+  }
+}
+Assets {
   Id: 10825356562241087190
   Name: "Star Dome"
   PlatformAssetType: 19
@@ -194,6 +212,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_scf_base_pillar_001_ref"
+  }
+}
+Assets {
+  Id: 6110959073533985629
+  Name: "Sci-fi Barrel 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_scf_barrel_002_ref"
+  }
+}
+Assets {
+  Id: 5842399828939275030
+  Name: "UI Buzzer Error Denied 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ui_buzzer_error_denied_01_Cue_ref"
   }
 }
 Assets {

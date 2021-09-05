@@ -162,7 +162,7 @@ Assets {
         }
         Trigger {
           Interactable: true
-          InteractionLabel: "Turn Off"
+          InteractionLabel: "Insert Injector"
           TeamSettings {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true

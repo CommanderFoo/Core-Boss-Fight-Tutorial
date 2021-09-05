@@ -59,26 +59,26 @@ local function ShootProjectile()
 	theProjectile.impactEvent:Connect(function(projectile, obj, hit)
 		if(Object.IsValid(obj)) then
 			
-			local results = World.SpherecastAll(hit:GetImpactPosition(), hit:GetImpactPosition() + Vector3.UP, 500, { shouldDebugRender = true })
+			local results = World.FindObjectsOverlappingSphere(hit:GetImpactPosition(), 500)
 			
 			CoreDebug.DrawSphere(hit:GetImpactPosition(), 500, { duration = 1 })
 
-			for index, result in ipairs(results) do
-				if(Object.IsValid(result.other)) then
+			for index, object in ipairs(results) do
+				if(Object.IsValid(object)) then
 					local damage = Damage.New()
 
 					damage.reason = DamageReason.NPC
 
-					if(result.other:IsA("Player")) then
-						Events.BroadcastToPlayer(result.other, "ShakeScreen", .8, 4.6)
+					if(object:IsA("Player")) then
+						Events.BroadcastToPlayer(object, "ShakeScreen", .8, 4.6)
 						damage.amount = 25
 					
 						--result.other:ApplyDamage(damage)
 					else
-						local damageable = GetDamageable(result.other)
-						
+						local damageable = GetDamageable(object)
+
 						if(Object.IsValid(damageable)) then
-							damage.amount = 100
+							damage.amount = 25
 
 							damageable:ApplyDamage(damage)
 						end

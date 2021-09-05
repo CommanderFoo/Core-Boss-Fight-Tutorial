@@ -7,7 +7,7 @@ Assets {
       RootId: 2280253776419062414
       Objects {
         Id: 2280253776419062414
-        Name: "Damageable Object"
+        Name: "Damageable Object Floor Tile Normal"
         Transform {
           Scale {
             X: 1
@@ -32,7 +32,7 @@ Assets {
         }
         DamageableObject {
           DamageSettings {
-            MaxHitpoints: 100
+            MaxHitpoints: 50
             StartingHitpoints: 100
             DestroyOnDeath: true
             DestroyOnDeathClientTemplateId {
@@ -53,13 +53,37 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 3
-            Y: 3
+            X: 5
+            Y: 5
             Z: 1
           }
         }
         ParentId: 2280253776419062414
         UnregisteredParameters {
+          Overrides {
+            Name: "ma:Building_Floor:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Building_Floor:vtile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Trim2:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Trim2:vtile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 3
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

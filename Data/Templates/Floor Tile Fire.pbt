@@ -107,6 +107,7 @@ Assets {
           }
         }
         ParentId: 15477060032527675096
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -200,6 +201,14 @@ Assets {
             Name: "bp:Visible In Preview"
             Bool: false
           }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 3.07642698
+          }
+          Overrides {
+            Name: "bp:Gravity"
+            Float: 3.68382502
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -232,6 +241,7 @@ Assets {
         Name: "Fire and Flame Burning Loop Set 01 SFX"
         Transform {
           Location {
+            Z: -150
           }
           Rotation {
           }
@@ -261,9 +271,10 @@ Assets {
           TeamSettings {
           }
           AudioBP {
-            Volume: 0.3
-            Falloff: 847.927246
-            Radius: 916.119934
+            AutoPlay: true
+            Volume: 0.6
+            Falloff: 973.571106
+            Radius: 983.132202
             FadeInTime: 0.5
             IsAttenuationEnabled: true
           }
