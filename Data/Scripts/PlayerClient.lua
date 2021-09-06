@@ -11,7 +11,7 @@ function Tick(deltaTime)
 	if(HEALTH_BAR.progress <= .5) then
 		elapsedTime = elapsedTime + deltaTime
 
-		local value = HEALTH_PULSE_CURVE:GetValue(elapsedTime) * 40
+		local value = HEALTH_PULSE_CURVE:GetValue(elapsedTime) * 20
 
 		HEALTH_BAR.width = math.floor(value)
 		HEALTH_BAR.height = math.floor(value)

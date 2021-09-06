@@ -17,6 +17,24 @@ Assets {
   }
 }
 Assets {
+  Id: 15524131069703845074
+  Name: "Sci-fi Base Capsule 02 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_scf_base_acc_cap_whole_001_ref"
+  }
+}
+Assets {
+  Id: 15420812111167953826
+  Name: "Sci-fi Base Capsule 01 Base"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_scf_base_acc_cap_bot_001_ref"
+  }
+}
+Assets {
   Id: 14726706108537705299
   Name: "Sci-fi Console Screen 04"
   PlatformAssetType: 1

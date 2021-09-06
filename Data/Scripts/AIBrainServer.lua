@@ -68,7 +68,7 @@ local function OnImpact(projectile, obj, hit)
 
 				if object:IsA("Player") then
 					Events.BroadcastToPlayer(object, "ShakeScreen", .8, 4.6)
-					damage.amount = 50
+					damage.amount = 40
 				
 					object:ApplyDamage(damage)
 				else

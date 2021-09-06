@@ -7,7 +7,7 @@ Assets {
       RootId: 7024465432346716399
       Objects {
         Id: 7024465432346716399
-        Name: "Damageable Object"
+        Name: "Exploding Barrels Damageable Object"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 194387869695793329
         ChildIds: 14366619706488028833
         ChildIds: 12256126984356547729
         ChildIds: 8922112815128240431
@@ -537,6 +537,7 @@ Assets {
         }
         ParentId: 7024465432346716399
         ChildIds: 951820670137949057
+        ChildIds: 11443820033532588493
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -611,6 +612,109 @@ Assets {
           }
         }
       }
+      Objects {
+        Id: 11443820033532588493
+        Name: "Effects"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9798937943052514671
+        ChildIds: 7248510474334727086
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 7248510474334727086
+        Name: "Fairy Dot Volume VFX"
+        Transform {
+          Location {
+            X: 5.34057617e-05
+            Y: -10.8797722
+            Z: 66.9022827
+          }
+          Rotation {
+            Yaw: 1.70754709e-06
+          }
+          Scale {
+            X: 0.944343746
+            Y: 1.12183654
+            Z: 1.70307958
+          }
+        }
+        ParentId: 11443820033532588493
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Secondary Color"
+            Color {
+              G: 0.272381365
+              B: 0.85800004
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 11.0761366
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 5.00285482
+          }
+          Overrides {
+            Name: "bp:Gravity"
+            Float: 10
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 1.34780359
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 4577976162687340642
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
     }
     Assets {
       Id: 12095835209017042614
@@ -646,6 +750,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prop_scf_barrel_001_ref"
+      }
+    }
+    Assets {
+      Id: 4577976162687340642
+      Name: "Fairy Dot Volume VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_Swirling_Magic_Column"
       }
     }
     PrimaryAssetId {

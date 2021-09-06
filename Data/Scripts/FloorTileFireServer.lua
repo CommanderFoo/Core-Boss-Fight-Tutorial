@@ -7,7 +7,7 @@ function Tick()
 
 	for index, obj in ipairs(results) do
 		if Object.IsValid(obj) and obj:IsA("Player") then
-			obj:ApplyDamage(Damage.New(10))
+			obj:ApplyDamage(Damage.New(8))
 		end
 	end
 
