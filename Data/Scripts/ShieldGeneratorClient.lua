@@ -4,22 +4,19 @@ local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
 local MAST = script:GetCustomProperty("Mast"):WaitForObject()
 local SCREEN = script:GetCustomProperty("Screen"):WaitForObject()
 
+-- Disables the generator effect, sound, and MASK material
 local function DisableGenerator()
 	SOUND:Stop()
 	EFFECT:Stop()
 
+	-- Slot 1 is the emissive material for this object
 	local slot = MAST:GetMaterialSlots()[1]
+
+	-- Get the material from the slot
 	local material = slot:GetCustomMaterial()
 
+	-- Set the missive to 0 to indicate it has be turned off
 	material:SetProperty("emissive_boost", 0)
-
-	for index, slot in ipairs(MAST:GetMaterialSlots()) do
-		print(slot.slotName)
-	end
-
-	for index, slot in ipairs(SCREEN:GetMaterialSlots()) do
-		print(slot.slotName)
-	end
 end
 
 Events.Connect("DisableGenerator" .. TRIGGER.id, DisableGenerator)

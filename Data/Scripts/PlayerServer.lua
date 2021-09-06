@@ -1,7 +1,11 @@
 local WEAPON = script:GetCustomProperty("weapon")
 
+-- Store a list of players in the game so that
+-- the events can be disconnected later when 
+-- they leave.
 local players = {}
 
+-- Look for a valid target that is a damageable object
 local function GetValidTarget(target)
 	if not Object.IsValid(target) then
 		return nil
@@ -14,6 +18,8 @@ local function GetValidTarget(target)
 	return target:FindAncestorByType("Damageable")
 end
 
+-- See if the target is invulnerable, if so, broadcast
+-- to the player for feedback.
 local function OnImpact(weaponObj, impactData)
 	local target = GetValidTarget(impactData.targetObject)
 
@@ -24,6 +30,8 @@ local function OnImpact(weaponObj, impactData)
 	end
 end
 
+-- When a player joins, give a weapon and setup
+-- the binding events for sprinting.
 local function OnPlayerJoined(player)
 	local weapon = World.SpawnAsset(WEAPON)
 
@@ -48,6 +56,7 @@ local function OnPlayerJoined(player)
 	}
 end
 
+-- Clean up the events when a player leaves
 local function OnPlayerLeft(player)
 	if players[player.id].pressedEvt.isConnected then
 		players[player.id].pressedEvt:Disconnect()

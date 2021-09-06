@@ -1,5 +1,9 @@
 local CHARGE_UP_EFFECT = script:GetCustomProperty("ChargeUpEffect"):WaitForObject()
 
-Events.Connect("PlayChargeUpEffect", function()
+-- Plays a charge up effect when the boss is 
+-- amount to shoot.
+local function PlayChargeUpEffect()
 	CHARGE_UP_EFFECT:Play()
-end)
+end
+
+Events.Connect("PlayChargeUpEffect", PlayChargeUpEffect)

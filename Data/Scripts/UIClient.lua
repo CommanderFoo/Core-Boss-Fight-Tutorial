@@ -2,7 +2,9 @@ local INJECTOR = script:GetCustomProperty("Injector"):WaitForObject()
 
 local localPlayer = Game.GetLocalPlayer()
 
-localPlayer.resourceChangedEvent:Connect(function(player, resourceName, newAmount)
+-- Check to see when the players injectors resourcec changes to the
+-- UI can also be updated.
+local function ResourceChanged(player, resourceName, newAmount)
 	if(resourceName == "injectors") then
 		if(newAmount == 0) then
 			INJECTOR.visibility = Visibility.FORCE_OFF
@@ -10,4 +12,6 @@ localPlayer.resourceChangedEvent:Connect(function(player, resourceName, newAmoun
 			INJECTOR.visibility = Visibility.FORCE_ON
 		end
 	end
-end)
+end
+
+localPlayer.resourceChangedEvent:Connect(ResourceChanged)
