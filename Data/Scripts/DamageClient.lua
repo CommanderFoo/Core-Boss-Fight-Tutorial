@@ -18,8 +18,6 @@ local function ShowDamage(damageAmount, isImmune)
 			color = Color.YELLOW
 			
 		})
-
-		Events.Broadcast("UpdateHealthBar")
 	end
 end
 

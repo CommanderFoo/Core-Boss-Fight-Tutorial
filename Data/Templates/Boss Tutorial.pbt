@@ -41333,11 +41333,11 @@ Assets {
           }
           AudioBP {
             AutoPlay: true
-            Volume: 0.0389954187
+            Repeat: true
+            Volume: 0.0389954
             Falloff: 3600
             Radius: 400
             FadeOutTime: 3
-            StopTime: 10
           }
         }
       }

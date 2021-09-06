@@ -55,6 +55,16 @@ Objects {
           Name: "Name"
           String: "Boss Tutorial"
         }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
       }
     }
     TemplateAsset {

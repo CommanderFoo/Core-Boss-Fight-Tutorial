@@ -236,9 +236,20 @@ local function GeneratorDisabled()
 	end
 end
 
+local sentUpdateBossHealthBar = false
+
 -- When the AI receives damage, broadcast that to the player
 -- who caused the damage.
 local function OnDamaged(obj, damage)
+
+	-- @TODO: Remove at some point if it is a bug
+	-- Workaround for Damageable Object not updating hitPoints for client when
+	-- Start Invulnerable is enabled. Only updates on damage received.
+	if not sentUpdateBossHealthBar then
+		Events.BroadcastToAllPlayers("CanUpdateBossHealthBar")
+		sentUpdateBossHealthBar = true
+	end
+
 	Events.BroadcastToPlayer(damage.sourcePlayer, "ShowDamage", damage.amount, false)
 end
 
