@@ -18,4 +18,13 @@ local function DisableGenerator()
 	material:SetProperty("emissive_boost", 0)
 end
 
+local function DisableGenerators(generators)
+	for index, generator in ipairs(generators) do
+		if generator == TRIGGER.id then
+			DisableGenerator()
+		end
+	end
+end
+
 Events.Connect("DisableGenerator" .. TRIGGER.id, DisableGenerator)
+Events.Connect("DisableGenerators", DisableGenerators)

@@ -6,7 +6,7 @@ local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
 local function OnInteracted(trigger, obj)
 	if Object.IsValid(obj) and obj:IsA("Player") then
 		if obj:GetResource("injectors") > 0 then
-			Events.Broadcast("GeneratorDisabled")
+			Events.Broadcast("GeneratorDisabled", TRIGGER.id)
 			Events.BroadcastToAllPlayers("DisableGenerator" .. TRIGGER.id)
 			obj:SetResource("injectors", 0)
 			TRIGGER.isInteractable = false

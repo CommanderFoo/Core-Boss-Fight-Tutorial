@@ -1,5 +1,7 @@
 local WEAPON = script:GetCustomProperty("Weapon")
 
+local GeneratorsTurnedOff = {}
+
 -- Store a list of players in the game so that
 -- the events can be disconnected later when 
 -- they leave.
@@ -80,6 +82,12 @@ local function OnPlayerJoined(player)
 	DisableWeapon(player)
 end
 
+local function UpdateGameState(player)
+	if #GeneratorsTurnedOff > 0 then
+		Events.BroadcastToPlayer(player, "DisableGenerators", GeneratorsTurnedOff)
+	end
+end
+
 -- Clean up the events when a player leaves
 local function OnPlayerLeft(player)
 	if players[player.id].pressedEvt.isConnected then
@@ -93,8 +101,17 @@ local function OnPlayerLeft(player)
 	players[player.id] = nil
 end
 
+-- Keep track of the generators that have already been
+-- disabled so that players who join later will get the
+-- same game state.
+local function GeneratorDisabled(triggerID)
+	GeneratorsTurnedOff[#GeneratorsTurnedOff + 1] = triggerID
+end
+
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
 Events.Connect("EnableWeapon", EnableWeapon)
 Events.Connect("DisableWeapon", DisableWeapon)
+Events.Connect("GeneratorDisabled", GeneratorDisabled)
+Events.ConnectForPlayer("ClientReady", UpdateGameState)
