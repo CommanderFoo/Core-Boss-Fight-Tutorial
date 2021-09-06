@@ -84,7 +84,13 @@ end
 
 local function UpdateGameState(player)
 	if #GeneratorsTurnedOff > 0 then
-		Events.BroadcastToPlayer(player, "DisableGenerators", GeneratorsTurnedOff)
+		local GeneratorsIDStr = ""
+
+		for index, id in ipairs(GeneratorsTurnedOff) do
+			GeneratorsIDStr = GeneratorsIDStr .. id .. "|"
+		end
+
+		Events.BroadcastToPlayer(player, "UpdateGameState", GeneratorsIDStr)
 	end
 end
 

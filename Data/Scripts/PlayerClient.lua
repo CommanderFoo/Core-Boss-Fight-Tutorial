@@ -18,6 +18,23 @@ function Tick(deltaTime)
 	end
 end
 
+local function UpdateGameState(generatorsDisabledIDStr)
+	local generators = {CoreString.Split(generatorsDisabledIDStr, "|")}
+	local counter = 0
+
+	for index, generator in ipairs(generators) do
+		if string.len(generator) > 1 then
+			counter = counter + 1
+			Events.Broadcast("DisableGenerator" .. generator)
+		end
+	end
+
+	if counter == 3 then
+		Events.Broadcast("EnableBossHealthBar")
+		Events.Broadcast("CanUpdateBossHealthBar")
+	end
+end
+
 -- Check to see when the players injectors resourcec changes to the
 -- UI can also be updated.
 local function ResourceChanged(player, resourceName, newAmount)
@@ -34,3 +51,5 @@ localPlayer.resourceChangedEvent:Connect(ResourceChanged)
 
 -- Let the server know the client is ready.
 Events.BroadcastToServer("ClientReady")
+
+Events.Connect("UpdateGameState", UpdateGameState)

@@ -232,7 +232,7 @@ local function GeneratorDisabled()
 
 	if generatorsDisabled == 3 then
 		DAMAGEABLE.isInvulnerable = false
-		Events.BroadcastToAllPlayers("EnableHealthBar")
+		Events.BroadcastToAllPlayers("EnableBossHealthBar")
 	end
 end
 

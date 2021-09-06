@@ -19,7 +19,7 @@ function Tick()
 	end
 end
 
-Events.Connect("EnableHealthBar", EnableHealthBar)
+Events.Connect("EnableBossHealthBar", EnableHealthBar)
 Events.Connect("CanUpdateBossHealthBar", function()
 	canTickHealth = true
 end)
