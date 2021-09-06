@@ -287,6 +287,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1752843651030245239
+  Name: "Icon Health"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Health"
+  }
+}
+Assets {
   Id: 1703597860484455525
   Name: "Sci-fi Antenna Mast 03"
   PlatformAssetType: 1

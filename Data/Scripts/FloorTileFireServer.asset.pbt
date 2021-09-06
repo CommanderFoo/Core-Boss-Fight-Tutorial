@@ -1,6 +1,6 @@
 Assets {
   Id: 18437755418622859233
-  Name: "FloorServer"
+  Name: "FloorTileFireServer"
   PlatformAssetType: 3
   TextAsset {
   }

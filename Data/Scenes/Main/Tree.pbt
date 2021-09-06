@@ -210,7 +210,7 @@ Objects {
 }
 Objects {
   Id: 9245853067590059717
-  Name: "UIClient"
+  Name: "PlayerUIClient"
   Transform {
     Location {
     }
@@ -228,6 +228,55 @@ Objects {
       Name: "cs:Injector"
       ObjectReference {
         SelfId: 7375453818495322274
+      }
+    }
+    Overrides {
+      Name: "cs:HealthBar"
+      ObjectReference {
+        SelfId: 13015672638484408741
+      }
+    }
+    Overrides {
+      Name: "cs:HealthPulseCruve"
+      SimpleCurve {
+        Keys {
+          Interpolation {
+            Value: "mc:erichcurveinterpmode:rcim_cubic"
+          }
+          TangentMode {
+            Value: "mc:erichcurvetangentmode:rctm_auto"
+          }
+        }
+        Keys {
+          Interpolation {
+            Value: "mc:erichcurveinterpmode:rcim_cubic"
+          }
+          TangentMode {
+            Value: "mc:erichcurvetangentmode:rctm_user"
+          }
+          Time: 0.206907406
+          Value: 0.799634576
+          ArriveTangent: 2.63336062
+          LeaveTangent: 2.63336062
+        }
+        Keys {
+          Interpolation {
+            Value: "mc:erichcurveinterpmode:rcim_cubic"
+          }
+          TangentMode {
+            Value: "mc:erichcurvetangentmode:rctm_user"
+          }
+          Time: 0.5
+          Value: 1
+          ArriveTangent: 0.23590599
+          LeaveTangent: 0.23590599
+        }
+        PreExtrapolation {
+          Value: "mc:erichcurveextrapolation:rcce_oscillate"
+        }
+        PostExtrapolation {
+          Value: "mc:erichcurveextrapolation:rcce_oscillate"
+        }
       }
     }
   }
@@ -348,6 +397,7 @@ Objects {
   }
   ParentId: 13970609965722175211
   ChildIds: 7375453818495322274
+  ChildIds: 1378762019542892551
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -387,6 +437,145 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 1378762019542892551
+  Name: "Player Health Panel"
+  Transform {
+    Location {
+      X: -7348.11377
+      Y: -704.440674
+      Z: 2077.32349
+    }
+    Rotation {
+      Yaw: -136.920441
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7028338135776682126
+  ChildIds: 13015672638484408741
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 150
+    Height: 150
+    UIX: 50
+    UIY: 50
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13015672638484408741
+  Name: "UI Progress Bar"
+  Transform {
+    Location {
+      X: -6787.8877
+      Y: 1.54589844
+      Z: -1502.32349
+    }
+    Rotation {
+      Yaw: 0.0859374478
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1378762019542892551
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    StatBar {
+      Color {
+        R: 1
+        A: 1
+      }
+      BackgroundColor {
+        R: 1
+        A: 0.2
+      }
+      Percent: 1
+      FillBrush {
+        Id: 1752843651030245239
+      }
+      BackgroundBrush {
+        Id: 1752843651030245239
+      }
+      FillType {
+        Value: "mc:eprogressbarfilltype:bottomtotop"
+      }
+      FillTileType {
+        Value: "mc:eslatebrushtiletype:notile"
+      }
+      BackgroundTileType {
+        Value: "mc:eslatebrushtiletype:notile"
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
@@ -1082,6 +1271,24 @@ Objects {
         SelfId: 3029568578658393125
       }
     }
+    Overrides {
+      Name: "cs:BossName"
+      ObjectReference {
+        SelfId: 2248279603685449860
+      }
+    }
+    Overrides {
+      Name: "cs:SkullBackground"
+      ObjectReference {
+        SelfId: 11015773837866651941
+      }
+    }
+    Overrides {
+      Name: "cs:Damageable"
+      ObjectReference {
+        SelfId: 3399686181059744299
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1144,9 +1351,9 @@ Objects {
     }
     StatBar {
       Color {
-        R: 0.296875
-        G: 0.296875
-        B: 0.296875
+        R: 0.221875027
+        G: 0.221875027
+        B: 0.221875027
         A: 1
       }
       BackgroundColor {
@@ -1233,8 +1440,9 @@ Objects {
     Text {
       Label: "Sphere Prime"
       Color {
-        R: 1
-        G: 1
+        R: 0.221875027
+        G: 0.221875027
+        B: 0.221875027
         A: 1
       }
       Size: 15
@@ -1321,8 +1529,9 @@ Objects {
         Id: 622433789355555801
       }
       Color {
-        R: 1
-        G: 0.98300004
+        R: 0.221875027
+        G: 0.221875027
+        B: 0.221875027
         A: 1
       }
       TeamSettings {
@@ -36360,7 +36569,7 @@ Objects {
       CanMoveDown: true
       IsMountEnabled: true
       MaxHitpoints: 100
-      PlayerMasterVolumeMultiplier: 1
+      PlayerMasterVolumeMultiplier: 0.6
     }
   }
 }

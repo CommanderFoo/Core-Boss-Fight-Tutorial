@@ -19,6 +19,7 @@ Assets {
         ChildIds: 3801095880525730093
         ChildIds: 11444005186940956544
         ChildIds: 17743161186507428981
+        ChildIds: 9242013715895720743
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -207,7 +208,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Gravity"
-            Float: 3.68382502
+            Float: 2.46960211
           }
         }
         Collidable_v2 {
@@ -277,6 +278,48 @@ Assets {
             Radius: 983.132202
             FadeInTime: 0.5
             IsAttenuationEnabled: true
+          }
+        }
+      }
+      Objects {
+        Id: 9242013715895720743
+        Name: "FloorTileFireServer"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15477060032527675096
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Trigger"
+            ObjectReference {
+              SubObjectId: 11444005186940956544
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 18437755418622859233
           }
         }
       }

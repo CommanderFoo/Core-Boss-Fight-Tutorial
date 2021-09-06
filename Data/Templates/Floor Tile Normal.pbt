@@ -1,6 +1,6 @@
 Assets {
   Id: 12478065471313389746
-  Name: "Damageable Object Floor Tile Normal"
+  Name: "Floor Tile Normal"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {

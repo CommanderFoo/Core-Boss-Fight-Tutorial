@@ -1,6 +1,6 @@
 Assets {
   Id: 4843752137526145276
-  Name: "UIClient"
+  Name: "PlayerUIClient"
   PlatformAssetType: 3
   TextAsset {
   }

@@ -1,6 +1,6 @@
 Assets {
   Id: 3136487366550747024
-  Name: "Exploding Barrels Damageable Object"
+  Name: "Exploding Barrels"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
