@@ -41457,6 +41457,7 @@ Assets {
         }
         ParentId: 17186972922284065763
         ChildIds: 6639268051277878389
+        ChildIds: 173889251975215310
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -41470,8 +41471,8 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 150
-          Height: 150
+          Width: 140
+          Height: 140
           UIX: -50
           UIY: -50
           RenderTransformPivot {
@@ -41524,6 +41525,81 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
+          Width: -20
+          Height: -20
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 11351570077880070872
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            TeamSettings {
+            }
+            ShadowColor {
+              A: 1
+            }
+            ShadowOffset {
+            }
+            ScreenshotIndex: 1
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 173889251975215310
+        Name: "UI Image"
+        Transform {
+          Location {
+            X: 1044.01392
+            Y: -241.409912
+            Z: 3392.9314
+          }
+          Rotation {
+            Yaw: 28.2666359
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9163037532024579322
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
           Width: 200
           Height: 200
           RenderTransformPivot {
@@ -41535,12 +41611,12 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 11351570077880070872
+              Id: 8536894243602515046
             }
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.00699541
+              G: 0.577580452
+              B: 0.693871737
               A: 1
             }
             TeamSettings {
@@ -42170,7 +42246,7 @@ Assets {
         Settings {
           IsDefault: true
           RespawnSettings {
-            RespawnDelay: 5
+            RespawnDelay: 3
             RespawnMode_v2 {
               Value: "mc:erespawnmode:random"
             }
@@ -42585,6 +42661,15 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_SciFi_Ability_Blue_015"
+      }
+    }
+    Assets {
+      Id: 8536894243602515046
+      Name: "Fantasy Frame 003"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Frame_003"
       }
     }
     Assets {
