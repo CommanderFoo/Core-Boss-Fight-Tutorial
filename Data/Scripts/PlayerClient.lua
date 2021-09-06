@@ -1,38 +1,55 @@
 local INJECTOR = script:GetCustomProperty("Injector"):WaitForObject()
 local HEALTH_BAR = script:GetCustomProperty("HealthBar"):WaitForObject()
 local HEALTH_PULSE_CURVE = script:GetCustomProperty("HealthPulseCruve")
+local TRANSITION = script:GetCustomProperty("Transition"):WaitForObject()
+local TRANSITION_CURVE = script:GetCustomProperty("TransitionCurve")
 
 local localPlayer = Game.GetLocalPlayer()
-local elapsedTime = 0
+local healthElapsedTime = 0
+local fadeOutTransition = false
+local transitionElapsedTime = 0
+local fadeDuration = 2
 
 function Tick(deltaTime)
 	HEALTH_BAR.progress = localPlayer.hitPoints / localPlayer.maxHitPoints
 
 	if(HEALTH_BAR.progress <= .5) then
-		elapsedTime = elapsedTime + deltaTime
+		healthElapsedTime = healthElapsedTime + deltaTime
 
-		local value = HEALTH_PULSE_CURVE:GetValue(elapsedTime) * 20
+		local value = HEALTH_PULSE_CURVE:GetValue(healthElapsedTime) * 20
 
 		HEALTH_BAR.width = math.floor(value)
 		HEALTH_BAR.height = math.floor(value)
 	end
+
+	if fadeOutTransition and transitionElapsedTime < fadeDuration  then
+		transitionElapsedTime = transitionElapsedTime + deltaTime
+
+		local value = TRANSITION_CURVE:GetValue(transitionElapsedTime / fadeDuration)
+
+		TRANSITION.opacity = 1 - value
+	end
 end
 
 local function UpdateGameState(generatorsDisabledIDStr)
-	local generators = {CoreString.Split(generatorsDisabledIDStr, "|")}
-	local counter = 0
+	if generatorsDisabledIDStr ~= nil and string.len(generatorsDisabledIDStr) > 1 then
+		local generators = {CoreString.Split(generatorsDisabledIDStr, "|")}
+		local counter = 0
 
-	for index, generator in ipairs(generators) do
-		if string.len(generator) > 1 then
-			counter = counter + 1
-			Events.Broadcast("DisableGenerator" .. generator)
+		for index, generator in ipairs(generators) do
+			if string.len(generator) > 1 then
+				counter = counter + 1
+				Events.Broadcast("DisableGenerator" .. generator)
+			end
+		end
+
+		if counter == 3 then
+			Events.Broadcast("EnableBossHealthBar")
+			Events.Broadcast("CanUpdateBossHealthBar")
 		end
 	end
 
-	if counter == 3 then
-		Events.Broadcast("EnableBossHealthBar")
-		Events.Broadcast("CanUpdateBossHealthBar")
-	end
+	fadeOutTransition = true
 end
 
 -- Check to see when the players injectors resourcec changes to the
@@ -49,7 +66,8 @@ end
 
 localPlayer.resourceChangedEvent:Connect(ResourceChanged)
 
--- Let the server know the client is ready.
-Events.BroadcastToServer("ClientReady")
-
 Events.Connect("UpdateGameState", UpdateGameState)
+
+-- Let the server know the client is ready.
+Task.Wait()
+Events.BroadcastToServer("ClientReady")

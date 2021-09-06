@@ -41397,6 +41397,7 @@ Assets {
         ParentId: 16937668913696722469
         ChildIds: 9163037532024579322
         ChildIds: 10294546291918265567
+        ChildIds: 15329312782797578791
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -41782,6 +41783,135 @@ Assets {
         }
       }
       Objects {
+        Id: 15329312782797578791
+        Name: "Transition"
+        Transform {
+          Location {
+            X: -8617.27246
+            Y: 5972.73096
+            Z: -1386.05811
+          }
+          Rotation {
+            Yaw: -88.079422
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17186972922284065763
+        ChildIds: 2221247886536832716
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 100
+          Height: 100
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Panel {
+            Opacity: 1
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 2221247886536832716
+        Name: "Image"
+        Transform {
+          Location {
+            X: 4999.99902
+            Y: -272.121094
+            Z: 967.790405
+          }
+          Rotation {
+            Yaw: 135.861298
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15329312782797578791
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 200
+          Height: 200
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+            }
+            Color {
+              A: 1
+            }
+            TeamSettings {
+            }
+            ShadowColor {
+              A: 1
+            }
+            ShadowOffset {
+            }
+            ScreenshotIndex: 1
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
         Id: 6435595194705467826
         Name: "CameraShakeClient"
         Transform {
@@ -41932,6 +42062,41 @@ Assets {
               }
               PostExtrapolation {
                 Value: "mc:erichcurveextrapolation:rcce_oscillate"
+              }
+            }
+          }
+          Overrides {
+            Name: "cs:Transition"
+            ObjectReference {
+              SubObjectId: 15329312782797578791
+            }
+          }
+          Overrides {
+            Name: "cs:TransitionCurve"
+            SimpleCurve {
+              Keys {
+                Interpolation {
+                  Value: "mc:erichcurveinterpmode:rcim_linear"
+                }
+                TangentMode {
+                  Value: "mc:erichcurvetangentmode:rctm_auto"
+                }
+              }
+              Keys {
+                Interpolation {
+                  Value: "mc:erichcurveinterpmode:rcim_linear"
+                }
+                TangentMode {
+                  Value: "mc:erichcurvetangentmode:rctm_auto"
+                }
+                Time: 1
+                Value: 1
+              }
+              PreExtrapolation {
+                Value: "mc:erichcurveextrapolation:rcce_constant"
+              }
+              PostExtrapolation {
+                Value: "mc:erichcurveextrapolation:rcce_constant"
               }
             }
           }

@@ -83,15 +83,15 @@ local function OnPlayerJoined(player)
 end
 
 local function UpdateGameState(player)
+	local GeneratorsIDStr = ""
+	
 	if #GeneratorsTurnedOff > 0 then
-		local GeneratorsIDStr = ""
-
 		for index, id in ipairs(GeneratorsTurnedOff) do
 			GeneratorsIDStr = GeneratorsIDStr .. id .. "|"
 		end
-
-		Events.BroadcastToPlayer(player, "UpdateGameState", GeneratorsIDStr)
 	end
+
+	Events.BroadcastToPlayer(player, "UpdateGameState", GeneratorsIDStr)
 end
 
 -- Clean up the events when a player leaves
