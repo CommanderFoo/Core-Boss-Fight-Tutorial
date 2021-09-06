@@ -192,11 +192,11 @@ Assets {
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 27.9446297
+            Float: 22.4437828
           }
           Overrides {
             Name: "bp:Life"
-            Float: 1.47339618
+            Float: 0.854151189
           }
           Overrides {
             Name: "bp:Visible In Preview"
@@ -204,11 +204,11 @@ Assets {
           }
           Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 2.47856975
+            Float: 1.87461209
           }
           Overrides {
             Name: "bp:Gravity"
-            Float: 2.26869583
+            Float: 1.63025773
           }
         }
         Collidable_v2 {

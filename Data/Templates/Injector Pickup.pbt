@@ -19,6 +19,7 @@ Assets {
         ChildIds: 9660811702361949473
         ChildIds: 2634654685056222309
         ChildIds: 16629349635316798192
+        ChildIds: 14791157168564996622
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -211,6 +212,109 @@ Assets {
           }
         }
       }
+      Objects {
+        Id: 14791157168564996622
+        Name: "Effects"
+        Transform {
+          Location {
+            Y: 58.5257568
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16637913083828318394
+        ChildIds: 6527936496458047190
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 6527936496458047190
+        Name: "Fairy Dot Volume VFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Pitch: 6.44566965
+            Yaw: 134.999985
+            Roll: -89.9999542
+          }
+          Scale {
+            X: 0.944343746
+            Y: 1.12183654
+            Z: 1.70307958
+          }
+        }
+        ParentId: 14791157168564996622
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Secondary Color"
+            Color {
+              G: 0.272381365
+              B: 0.85800004
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 11.0761366
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 5.00285482
+          }
+          Overrides {
+            Name: "bp:Gravity"
+            Float: 10
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 1.34780359
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 4577976162687340642
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
     }
     Assets {
       Id: 15524131069703845074
@@ -228,6 +332,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_basic_emissive_001"
+      }
+    }
+    Assets {
+      Id: 4577976162687340642
+      Name: "Fairy Dot Volume VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_Swirling_Magic_Column"
       }
     }
     PrimaryAssetId {

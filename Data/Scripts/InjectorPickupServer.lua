@@ -3,7 +3,7 @@ local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
 -- Handles checking if the player can pickup the
 -- injector. If they can't, an error sound is played.
 local function PickupItem(trigger, obj)
-	if Object.IsValid(obj) and obj:IsA("Player") then
+	if Object.IsValid(obj) and obj:IsA("Player") and not obj.isDead then
 
 		-- Check the players resource to see if they don't already
 		-- have an injector.
