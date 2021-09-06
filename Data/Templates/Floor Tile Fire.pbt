@@ -204,11 +204,11 @@ Assets {
           }
           Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 3.07642698
+            Float: 2.47856975
           }
           Overrides {
             Name: "bp:Gravity"
-            Float: 2.46960211
+            Float: 2.26869583
           }
         }
         Collidable_v2 {

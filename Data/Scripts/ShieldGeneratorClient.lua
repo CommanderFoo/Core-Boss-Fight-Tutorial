@@ -2,7 +2,6 @@ local SOUND = script:GetCustomProperty("Sound"):WaitForObject()
 local EFFECT = script:GetCustomProperty("Effect"):WaitForObject()
 local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
 local MAST = script:GetCustomProperty("Mast"):WaitForObject()
-local SCREEN = script:GetCustomProperty("Screen"):WaitForObject()
 
 -- Disables the generator effect, sound, and MASK material
 local function DisableGenerator()

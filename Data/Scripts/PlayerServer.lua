@@ -1,4 +1,4 @@
-local WEAPON = script:GetCustomProperty("weapon")
+local WEAPON = script:GetCustomProperty("Weapon")
 
 -- Store a list of players in the game so that
 -- the events can be disconnected later when 
@@ -30,13 +30,34 @@ local function OnImpact(weaponObj, impactData)
 	end
 end
 
+-- Enable weapon abilities for the player
+local function EnableWeapon(player)
+	if Object.IsValid(player) and players[player.id] and Object.IsValid(players[player.id].weapon) then
+		local abilities = players[player.id].weapon:FindDescendantsByType("Ability")
+
+		for index, ability in ipairs(abilities) do
+			ability.isEnabled = true
+		end
+	end
+end
+
+-- Disable weapon abilities for the player
+local function DisableWeapon(player)
+	if Object.IsValid(player) and players[player.id] and Object.IsValid(players[player.id].weapon) then
+		local abilities = players[player.id].weapon:FindDescendantsByType("Ability")
+
+		for index, ability in ipairs(abilities) do
+			ability.isEnabled = false
+		end
+	end
+end
+
 -- When a player joins, give a weapon and setup
 -- the binding events for sprinting.
 local function OnPlayerJoined(player)
 	local weapon = World.SpawnAsset(WEAPON)
 
 	weapon:Equip(player)
-
 	weapon.targetImpactedEvent:Connect(OnImpact)
 
 	players[player.id] = {
@@ -53,7 +74,10 @@ local function OnPlayerJoined(player)
 			end
 		end),
 
+		weapon = weapon
 	}
+
+	DisableWeapon(player)
 end
 
 -- Clean up the events when a player leaves
@@ -71,3 +95,6 @@ end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
+
+Events.Connect("EnableWeapon", EnableWeapon)
+Events.Connect("DisableWeapon", DisableWeapon)

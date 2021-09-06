@@ -842,12 +842,6 @@ Assets {
               SubObjectId: 13563632397439224465
             }
           }
-          Overrides {
-            Name: "cs:Screen"
-            ObjectReference {
-              SubObjectId: 85453099874912642
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

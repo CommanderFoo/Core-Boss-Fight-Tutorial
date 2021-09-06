@@ -80,7 +80,7 @@ Objects {
   ParentId: 10406456305735864982
   UnregisteredParameters {
     Overrides {
-      Name: "cs:weapon"
+      Name: "cs:Weapon"
       AssetReference {
         Id: 17902986019866161085
       }
@@ -318,6 +318,15 @@ Objects {
       Name: "cs:FlyupPosition"
       ObjectReference {
         SelfId: 2532477021506106140
+      }
+    }
+    Overrides {
+      Name: "cs:ImmuneColor"
+      Color {
+        R: 0.221875027
+        G: 0.221875027
+        B: 0.221875027
+        A: 1
       }
     }
   }
@@ -959,8 +968,9 @@ Objects {
   }
   DamageableObject {
     DamageSettings {
-      MaxHitpoints: 1
-      StartingHitpoints: 2500
+      MaxHitpoints: 3000
+      StartingHitpoints: 3000
+      StartInvulnerable: true
       DestroyOnDeath: true
       DestroyOnDeathClientTemplateId {
         Id: 5397208848152318104
@@ -2702,7 +2712,7 @@ Objects {
   ParentId: 11177799476702408522
   UnregisteredParameters {
     Overrides {
-      Name: "cs:boss"
+      Name: "cs:Boss"
       ObjectReference {
         SelfId: 16360250008753358231
       }
@@ -2842,14 +2852,6 @@ Objects {
   Id: 4654105012172122632
   Name: "Shield Generator"
   Transform {
-    Location {
-      X: -6100
-      Y: -325
-      Z: 650
-    }
-    Rotation {
-      Yaw: 89.9999924
-    }
     Scale {
       X: 1
       Y: 1
@@ -2884,27 +2886,6 @@ Objects {
             Yaw: 180
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11620458686701108955
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 132.877136
-            Y: 4804.88232
-            Z: 928.861206
-          }
-        }
       }
     }
     TemplateAsset {
@@ -2916,13 +2897,6 @@ Objects {
   Id: 1414864829157123018
   Name: "Shield Generator"
   Transform {
-    Location {
-      X: -2550
-      Y: 4500
-      Z: 650
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -2955,27 +2929,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 90
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11620458686701108955
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -49.0026855
-            Y: 3730.17651
-            Z: 953.806396
           }
         }
       }
