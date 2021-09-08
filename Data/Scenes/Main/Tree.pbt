@@ -6382,7 +6382,6 @@ Objects {
   ChildIds: 14178793161109921024
   ChildIds: 32074696213839389
   ChildIds: 16786504477606777720
-  ChildIds: 16104047680551154822
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6412,230 +6411,6 @@ Objects {
   InstanceHistory {
     SelfId: 4367222311938780264
     SubobjectId: 7940052850775601025
-    InstanceId: 4182652085825422962
-    TemplateId: 14696649980997795252
-  }
-}
-Objects {
-  Id: 16104047680551154822
-  Name: "Damageable Object"
-  Transform {
-    Location {
-      X: 95.6103821
-      Y: 69.9522552
-      Z: 163.82785
-    }
-    Rotation {
-      Pitch: 6.44566965
-      Yaw: -6.44650269
-      Roll: -90
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4367222311938780264
-  ChildIds: 6194763556697641580
-  ChildIds: 15314275239239403573
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  DamageableObject {
-    DamageSettings {
-      MaxHitpoints: 50
-      StartingHitpoints: 100
-      DestroyOnDeath: true
-      DestroyOnDeathClientTemplateId {
-        Id: 2137904090696284611
-      }
-      DestroyOnDeathNetworkedTemplateId {
-        Id: 841534158063459245
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 16104047680551154822
-    SubobjectId: 10220590019970578287
-    InstanceId: 4182652085825422962
-    TemplateId: 14696649980997795252
-  }
-}
-Objects {
-  Id: 15314275239239403573
-  Name: "Effects"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16104047680551154822
-  ChildIds: 16650544992215336456
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  NetworkContext {
-  }
-  InstanceHistory {
-    SelfId: 15314275239239403573
-    SubobjectId: 9668377666556201948
-    InstanceId: 4182652085825422962
-    TemplateId: 14696649980997795252
-  }
-}
-Objects {
-  Id: 16650544992215336456
-  Name: "Fairy Dot Volume VFX"
-  Transform {
-    Location {
-      X: 5.34057617e-05
-      Y: -10.8797722
-      Z: 66.9022827
-    }
-    Rotation {
-      Yaw: 1.70754709e-06
-    }
-    Scale {
-      X: 0.944343746
-      Y: 1.12183654
-      Z: 1.70307958
-    }
-  }
-  ParentId: 15314275239239403573
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Secondary Color"
-      Color {
-        G: 0.272381365
-        B: 0.85800004
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 11.0761366
-    }
-    Overrides {
-      Name: "bp:Density"
-      Float: 5.00285482
-    }
-    Overrides {
-      Name: "bp:Gravity"
-      Float: 10
-    }
-    Overrides {
-      Name: "bp:Particle Scale Multiplier"
-      Float: 1.34780359
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 4577976162687340642
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-  InstanceHistory {
-    SelfId: 16650544992215336456
-    SubobjectId: 13094594155083744737
-    InstanceId: 4182652085825422962
-    TemplateId: 14696649980997795252
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 6194763556697641580
-  Name: "Sci-fi Barrel 01"
-  Transform {
-    Location {
-      X: -8.56543295e-07
-      Y: -7.58116039e-06
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16104047680551154822
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 18123443093604083044
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 6194763556697641580
-    SubobjectId: 528045750814527877
     InstanceId: 4182652085825422962
     TemplateId: 14696649980997795252
   }
@@ -6766,6 +6541,8 @@ Objects {
   ChildIds: 13707163582185345121
   ChildIds: 12137430551296785316
   ChildIds: 13305955837339114918
+  ChildIds: 6194763556697641580
+  ChildIds: 15314275239239403573
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -6784,6 +6561,182 @@ Objects {
   InstanceHistory {
     SelfId: 32074696213839389
     SubobjectId: 5970143312102915572
+    InstanceId: 4182652085825422962
+    TemplateId: 14696649980997795252
+  }
+}
+Objects {
+  Id: 15314275239239403573
+  Name: "Effects"
+  Transform {
+    Location {
+      X: 95.6103363
+      Y: 69.9521255
+      Z: 163.827911
+    }
+    Rotation {
+      Pitch: 6.44566965
+      Yaw: -6.44650078
+      Roll: -89.9999771
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 32074696213839389
+  ChildIds: 16650544992215336456
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 15314275239239403573
+    SubobjectId: 9668377666556201948
+    InstanceId: 4182652085825422962
+    TemplateId: 14696649980997795252
+  }
+}
+Objects {
+  Id: 16650544992215336456
+  Name: "Fairy Dot Volume VFX"
+  Transform {
+    Location {
+      X: 5.34057617e-05
+      Y: -10.8797722
+      Z: 66.9022827
+    }
+    Rotation {
+      Yaw: 1.70754709e-06
+    }
+    Scale {
+      X: 0.944343746
+      Y: 1.12183654
+      Z: 1.70307958
+    }
+  }
+  ParentId: 15314275239239403573
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Secondary Color"
+      Color {
+        G: 0.272381365
+        B: 0.85800004
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 11.0761366
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 5.00285482
+    }
+    Overrides {
+      Name: "bp:Gravity"
+      Float: 10
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 1.34780359
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4577976162687340642
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  InstanceHistory {
+    SelfId: 16650544992215336456
+    SubobjectId: 13094594155083744737
+    InstanceId: 4182652085825422962
+    TemplateId: 14696649980997795252
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 6194763556697641580
+  Name: "Sci-fi Barrel 01"
+  Transform {
+    Location {
+      X: 95.6103363
+      Y: 69.9521255
+      Z: 163.827911
+    }
+    Rotation {
+      Pitch: 6.44566965
+      Yaw: -6.44650078
+      Roll: -89.9999771
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 32074696213839389
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18123443093604083044
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 6194763556697641580
+    SubobjectId: 528045750814527877
     InstanceId: 4182652085825422962
     TemplateId: 14696649980997795252
   }
@@ -7189,7 +7142,6 @@ Objects {
   ChildIds: 15289398345669838533
   ChildIds: 7093657466933674395
   ChildIds: 2579906838044876914
-  ChildIds: 9006898342732456206
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7219,230 +7171,6 @@ Objects {
   InstanceHistory {
     SelfId: 10827074199795630279
     SubobjectId: 14189356903654900526
-    InstanceId: 4182652085825422962
-    TemplateId: 14696649980997795252
-  }
-}
-Objects {
-  Id: 9006898342732456206
-  Name: "Damageable Object"
-  Transform {
-    Location {
-      X: 95.6103821
-      Y: 69.9522552
-      Z: 163.82785
-    }
-    Rotation {
-      Pitch: 6.44566965
-      Yaw: -6.44650269
-      Roll: -90
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10827074199795630279
-  ChildIds: 9669276318724433845
-  ChildIds: 3798711892865134167
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  DamageableObject {
-    DamageSettings {
-      MaxHitpoints: 50
-      StartingHitpoints: 100
-      DestroyOnDeath: true
-      DestroyOnDeathClientTemplateId {
-        Id: 2137904090696284611
-      }
-      DestroyOnDeathNetworkedTemplateId {
-        Id: 841534158063459245
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 9006898342732456206
-    SubobjectId: 3338618817953964775
-    InstanceId: 4182652085825422962
-    TemplateId: 14696649980997795252
-  }
-}
-Objects {
-  Id: 3798711892865134167
-  Name: "Effects"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9006898342732456206
-  ChildIds: 10389175097842751199
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  NetworkContext {
-  }
-  InstanceHistory {
-    SelfId: 3798711892865134167
-    SubobjectId: 7357890191225056702
-    InstanceId: 4182652085825422962
-    TemplateId: 14696649980997795252
-  }
-}
-Objects {
-  Id: 10389175097842751199
-  Name: "Fairy Dot Volume VFX"
-  Transform {
-    Location {
-      X: 5.34057617e-05
-      Y: -10.8797722
-      Z: 66.9022827
-    }
-    Rotation {
-      Yaw: 1.70754709e-06
-    }
-    Scale {
-      X: 0.944343746
-      Y: 1.12183654
-      Z: 1.70307958
-    }
-  }
-  ParentId: 3798711892865134167
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Secondary Color"
-      Color {
-        G: 0.272381365
-        B: 0.85800004
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 11.0761366
-    }
-    Overrides {
-      Name: "bp:Density"
-      Float: 5.00285482
-    }
-    Overrides {
-      Name: "bp:Gravity"
-      Float: 10
-    }
-    Overrides {
-      Name: "bp:Particle Scale Multiplier"
-      Float: 1.34780359
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 4577976162687340642
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-  InstanceHistory {
-    SelfId: 10389175097842751199
-    SubobjectId: 14016897243203474742
-    InstanceId: 4182652085825422962
-    TemplateId: 14696649980997795252
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 9669276318724433845
-  Name: "Sci-fi Barrel 01"
-  Transform {
-    Location {
-      X: -8.56543295e-07
-      Y: -7.58116039e-06
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9006898342732456206
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 18123443093604083044
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 9669276318724433845
-    SubobjectId: 15320100132995818588
     InstanceId: 4182652085825422962
     TemplateId: 14696649980997795252
   }
@@ -7573,6 +7301,8 @@ Objects {
   ChildIds: 5144713987234595903
   ChildIds: 11735403615272838031
   ChildIds: 17778493588450914235
+  ChildIds: 9669276318724433845
+  ChildIds: 3798711892865134167
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -7591,6 +7321,182 @@ Objects {
   InstanceHistory {
     SelfId: 7093657466933674395
     SubobjectId: 3520264132696392306
+    InstanceId: 4182652085825422962
+    TemplateId: 14696649980997795252
+  }
+}
+Objects {
+  Id: 3798711892865134167
+  Name: "Effects"
+  Transform {
+    Location {
+      X: 95.6103287
+      Y: 69.9522171
+      Z: 163.827911
+    }
+    Rotation {
+      Pitch: 6.44566965
+      Yaw: -6.44650269
+      Roll: -89.9999847
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7093657466933674395
+  ChildIds: 10389175097842751199
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 3798711892865134167
+    SubobjectId: 7357890191225056702
+    InstanceId: 4182652085825422962
+    TemplateId: 14696649980997795252
+  }
+}
+Objects {
+  Id: 10389175097842751199
+  Name: "Fairy Dot Volume VFX"
+  Transform {
+    Location {
+      X: 5.34057617e-05
+      Y: -10.8797722
+      Z: 66.9022827
+    }
+    Rotation {
+      Yaw: 1.70754709e-06
+    }
+    Scale {
+      X: 0.944343746
+      Y: 1.12183654
+      Z: 1.70307958
+    }
+  }
+  ParentId: 3798711892865134167
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Secondary Color"
+      Color {
+        G: 0.272381365
+        B: 0.85800004
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 11.0761366
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 5.00285482
+    }
+    Overrides {
+      Name: "bp:Gravity"
+      Float: 10
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 1.34780359
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4577976162687340642
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  InstanceHistory {
+    SelfId: 10389175097842751199
+    SubobjectId: 14016897243203474742
+    InstanceId: 4182652085825422962
+    TemplateId: 14696649980997795252
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 9669276318724433845
+  Name: "Sci-fi Barrel 01"
+  Transform {
+    Location {
+      X: 95.6103287
+      Y: 69.9522171
+      Z: 163.827911
+    }
+    Rotation {
+      Pitch: 6.44566965
+      Yaw: -6.44650269
+      Roll: -89.9999847
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7093657466933674395
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18123443093604083044
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 9669276318724433845
+    SubobjectId: 15320100132995818588
     InstanceId: 4182652085825422962
     TemplateId: 14696649980997795252
   }
@@ -7996,7 +7902,6 @@ Objects {
   ChildIds: 10296001491282105764
   ChildIds: 10573234237324288496
   ChildIds: 10158743409138444551
-  ChildIds: 15836660625576229983
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8026,230 +7931,6 @@ Objects {
   InstanceHistory {
     SelfId: 13701170203324256288
     SubobjectId: 17046005599579722697
-    InstanceId: 4182652085825422962
-    TemplateId: 14696649980997795252
-  }
-}
-Objects {
-  Id: 15836660625576229983
-  Name: "Damageable Object"
-  Transform {
-    Location {
-      X: 95.6103821
-      Y: 69.9522552
-      Z: 163.82785
-    }
-    Rotation {
-      Pitch: 6.44566965
-      Yaw: -6.44650269
-      Roll: -90
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13701170203324256288
-  ChildIds: 4672088271470190083
-  ChildIds: 8357700580844266711
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  DamageableObject {
-    DamageSettings {
-      MaxHitpoints: 50
-      StartingHitpoints: 100
-      DestroyOnDeath: true
-      DestroyOnDeathClientTemplateId {
-        Id: 2137904090696284611
-      }
-      DestroyOnDeathNetworkedTemplateId {
-        Id: 841534158063459245
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 15836660625576229983
-    SubobjectId: 9902527849467297718
-    InstanceId: 4182652085825422962
-    TemplateId: 14696649980997795252
-  }
-}
-Objects {
-  Id: 8357700580844266711
-  Name: "Effects"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15836660625576229983
-  ChildIds: 2072218434720097226
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  NetworkContext {
-  }
-  InstanceHistory {
-    SelfId: 8357700580844266711
-    SubobjectId: 2402461595164190526
-    InstanceId: 4182652085825422962
-    TemplateId: 14696649980997795252
-  }
-}
-Objects {
-  Id: 2072218434720097226
-  Name: "Fairy Dot Volume VFX"
-  Transform {
-    Location {
-      X: 5.34057617e-05
-      Y: -10.8797722
-      Z: 66.9022827
-    }
-    Rotation {
-      Yaw: 1.70754709e-06
-    }
-    Scale {
-      X: 0.944343746
-      Y: 1.12183654
-      Z: 1.70307958
-    }
-  }
-  ParentId: 8357700580844266711
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Secondary Color"
-      Color {
-        G: 0.272381365
-        B: 0.85800004
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 11.0761366
-    }
-    Overrides {
-      Name: "bp:Density"
-      Float: 5.00285482
-    }
-    Overrides {
-      Name: "bp:Gravity"
-      Float: 10
-    }
-    Overrides {
-      Name: "bp:Particle Scale Multiplier"
-      Float: 1.34780359
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 4577976162687340642
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-  InstanceHistory {
-    SelfId: 2072218434720097226
-    SubobjectId: 5650392307204759587
-    InstanceId: 4182652085825422962
-    TemplateId: 14696649980997795252
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 4672088271470190083
-  Name: "Sci-fi Barrel 01"
-  Transform {
-    Location {
-      X: -8.56543295e-07
-      Y: -7.58116039e-06
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15836660625576229983
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 18123443093604083044
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 4672088271470190083
-    SubobjectId: 1332311178792410602
     InstanceId: 4182652085825422962
     TemplateId: 14696649980997795252
   }
@@ -8380,6 +8061,8 @@ Objects {
   ChildIds: 13999032279664198108
   ChildIds: 6347395895469021191
   ChildIds: 9883846708401928376
+  ChildIds: 4672088271470190083
+  ChildIds: 8357700580844266711
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -8398,6 +8081,182 @@ Objects {
   InstanceHistory {
     SelfId: 10573234237324288496
     SubobjectId: 13839679262937686553
+    InstanceId: 4182652085825422962
+    TemplateId: 14696649980997795252
+  }
+}
+Objects {
+  Id: 8357700580844266711
+  Name: "Effects"
+  Transform {
+    Location {
+      X: 95.6103821
+      Y: 69.9521942
+      Z: 163.827911
+    }
+    Rotation {
+      Pitch: 6.44566965
+      Yaw: -6.44650364
+      Roll: -90.0000076
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10573234237324288496
+  ChildIds: 2072218434720097226
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 8357700580844266711
+    SubobjectId: 2402461595164190526
+    InstanceId: 4182652085825422962
+    TemplateId: 14696649980997795252
+  }
+}
+Objects {
+  Id: 2072218434720097226
+  Name: "Fairy Dot Volume VFX"
+  Transform {
+    Location {
+      X: 5.34057617e-05
+      Y: -10.8797722
+      Z: 66.9022827
+    }
+    Rotation {
+      Yaw: 1.70754709e-06
+    }
+    Scale {
+      X: 0.944343746
+      Y: 1.12183654
+      Z: 1.70307958
+    }
+  }
+  ParentId: 8357700580844266711
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Secondary Color"
+      Color {
+        G: 0.272381365
+        B: 0.85800004
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 11.0761366
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 5.00285482
+    }
+    Overrides {
+      Name: "bp:Gravity"
+      Float: 10
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 1.34780359
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4577976162687340642
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  InstanceHistory {
+    SelfId: 2072218434720097226
+    SubobjectId: 5650392307204759587
+    InstanceId: 4182652085825422962
+    TemplateId: 14696649980997795252
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 4672088271470190083
+  Name: "Sci-fi Barrel 01"
+  Transform {
+    Location {
+      X: 95.6103821
+      Y: 69.9521942
+      Z: 163.827911
+    }
+    Rotation {
+      Pitch: 6.44566965
+      Yaw: -6.44650364
+      Roll: -90.0000076
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10573234237324288496
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18123443093604083044
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 4672088271470190083
+    SubobjectId: 1332311178792410602
     InstanceId: 4182652085825422962
     TemplateId: 14696649980997795252
   }
