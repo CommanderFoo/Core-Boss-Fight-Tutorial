@@ -4839,6 +4839,12 @@ Assets {
         ChildIds: 3484957012803783242
         ChildIds: 4461925268044477411
         ChildIds: 14875293414971977568
+        ChildIds: 17783596593214510961
+        ChildIds: 10440245301841205255
+        ChildIds: 10868162022463225942
+        ChildIds: 6161882456753997546
+        ChildIds: 675342252035927450
+        ChildIds: 9347527076504614182
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -5996,6 +6002,346 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 5770631945866545278
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 17783596593214510961
+        Name: "Glass"
+        Transform {
+          Location {
+            X: -1500
+            Y: 6100
+            Z: 900
+          }
+          Rotation {
+            Roll: -89.9999924
+          }
+          Scale {
+            X: 16
+            Y: 9.19999886
+            Z: 7.1
+          }
+        }
+        ParentId: 2833220335639212522
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 13044463944252033083
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10999420465528935017
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 10440245301841205255
+        Name: "Glass"
+        Transform {
+          Location {
+            X: -5600
+            Y: 6100
+            Z: 900
+          }
+          Rotation {
+            Roll: -89.9999924
+          }
+          Scale {
+            X: 16
+            Y: 9.19999886
+            Z: 7.1
+          }
+        }
+        ParentId: 2833220335639212522
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 13044463944252033083
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10999420465528935017
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 10868162022463225942
+        Name: "Glass"
+        Transform {
+          Location {
+            X: -8700
+            Y: 2900
+            Z: 900
+          }
+          Rotation {
+            Yaw: 89.9999847
+            Roll: -89.9999847
+          }
+          Scale {
+            X: 16
+            Y: 9.19999886
+            Z: 7.1
+          }
+        }
+        ParentId: 2833220335639212522
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 13044463944252033083
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10999420465528935017
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 6161882456753997546
+        Name: "Glass"
+        Transform {
+          Location {
+            X: -8700
+            Y: -3100
+            Z: 900
+          }
+          Rotation {
+            Yaw: 89.9999695
+            Roll: -89.9999924
+          }
+          Scale {
+            X: 16
+            Y: 9.19999886
+            Z: 7.1
+          }
+        }
+        ParentId: 2833220335639212522
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 13044463944252033083
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10999420465528935017
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 675342252035927450
+        Name: "Glass"
+        Transform {
+          Location {
+            X: -5400
+            Y: -6300
+            Z: 900
+          }
+          Rotation {
+            Yaw: -179.999985
+            Roll: -89.9999847
+          }
+          Scale {
+            X: 16
+            Y: 9.19999886
+            Z: 7.1
+          }
+        }
+        ParentId: 2833220335639212522
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 13044463944252033083
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10999420465528935017
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 9347527076504614182
+        Name: "Glass"
+        Transform {
+          Location {
+            X: -1550
+            Y: -6300
+            Z: 900
+          }
+          Rotation {
+            Yaw: -179.999969
+            Roll: -89.9999847
+          }
+          Scale {
+            X: 16
+            Y: 9.19999886
+            Z: 7.1
+          }
+        }
+        ParentId: 2833220335639212522
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 13044463944252033083
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10999420465528935017
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -34733,7 +35079,6 @@ Assets {
         ChildIds: 15873351112586745421
         ChildIds: 13839679262937686553
         ChildIds: 16019547126740708078
-        ChildIds: 9902527849467297718
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34840,6 +35185,8 @@ Assets {
         ChildIds: 10443086407782580789
         ChildIds: 773982097302871022
         ChildIds: 15817130370282699601
+        ChildIds: 1332311178792410602
+        ChildIds: 2402461595164190526
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -35139,6 +35486,164 @@ Assets {
         }
       }
       Objects {
+        Id: 1332311178792410602
+        Name: "Sci-fi Barrel 01"
+        Transform {
+          Location {
+            X: 95.6103821
+            Y: 69.9521942
+            Z: 163.827911
+          }
+          Rotation {
+            Pitch: 6.44566965
+            Yaw: -6.44650364
+            Roll: -90.0000076
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13839679262937686553
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18123443093604083044
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 2402461595164190526
+        Name: "Effects"
+        Transform {
+          Location {
+            X: 95.6103821
+            Y: 69.9521942
+            Z: 163.827911
+          }
+          Rotation {
+            Pitch: 6.44566965
+            Yaw: -6.44650364
+            Roll: -90.0000076
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13839679262937686553
+        ChildIds: 5650392307204759587
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 5650392307204759587
+        Name: "Fairy Dot Volume VFX"
+        Transform {
+          Location {
+            X: 5.34057617e-05
+            Y: -10.8797722
+            Z: 66.9022827
+          }
+          Rotation {
+            Yaw: 1.70754709e-06
+          }
+          Scale {
+            X: 0.944343746
+            Y: 1.12183654
+            Z: 1.70307958
+          }
+        }
+        ParentId: 2402461595164190526
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Secondary Color"
+            Color {
+              G: 0.272381365
+              B: 0.85800004
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 11.0761366
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 5.00285482
+          }
+          Overrides {
+            Name: "bp:Gravity"
+            Float: 10
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 1.34780359
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 4577976162687340642
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
         Id: 16019547126740708078
         Name: "Damageable Object"
         Transform {
@@ -35230,206 +35735,6 @@ Assets {
         }
       }
       Objects {
-        Id: 9902527849467297718
-        Name: "Damageable Object"
-        Transform {
-          Location {
-            X: 95.6103821
-            Y: 69.9522552
-            Z: 163.82785
-          }
-          Rotation {
-            Pitch: 6.44566965
-            Yaw: -6.44650269
-            Roll: -90
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 17046005599579722697
-        ChildIds: 1332311178792410602
-        ChildIds: 2402461595164190526
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        DamageableObject {
-          DamageSettings {
-            MaxHitpoints: 50
-            StartingHitpoints: 100
-            DestroyOnDeath: true
-            DestroyOnDeathClientTemplateId {
-              Id: 2137904090696284611
-            }
-            DestroyOnDeathNetworkedTemplateId {
-              Id: 841534158063459245
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 1332311178792410602
-        Name: "Sci-fi Barrel 01"
-        Transform {
-          Location {
-            X: -8.56543295e-07
-            Y: -7.58116039e-06
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 9902527849467297718
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18123443093604083044
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 2402461595164190526
-        Name: "Effects"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 9902527849467297718
-        ChildIds: 5650392307204759587
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 5650392307204759587
-        Name: "Fairy Dot Volume VFX"
-        Transform {
-          Location {
-            X: 5.34057617e-05
-            Y: -10.8797722
-            Z: 66.9022827
-          }
-          Rotation {
-            Yaw: 1.70754709e-06
-          }
-          Scale {
-            X: 0.944343746
-            Y: 1.12183654
-            Z: 1.70307958
-          }
-        }
-        ParentId: 2402461595164190526
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Secondary Color"
-            Color {
-              G: 0.272381365
-              B: 0.85800004
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 11.0761366
-          }
-          Overrides {
-            Name: "bp:Density"
-            Float: 5.00285482
-          }
-          Overrides {
-            Name: "bp:Gravity"
-            Float: 10
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 1.34780359
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 4577976162687340642
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 14189356903654900526
         Name: "Exploding Barrels Damageable Object"
         Transform {
@@ -35450,7 +35755,6 @@ Assets {
         ChildIds: 9693185366178350380
         ChildIds: 3520264132696392306
         ChildIds: 8171339432433017755
-        ChildIds: 3338618817953964775
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35557,6 +35861,8 @@ Assets {
         ChildIds: 1571321340794882006
         ChildIds: 17327389677466411110
         ChildIds: 11822551328182692946
+        ChildIds: 15320100132995818588
+        ChildIds: 7357890191225056702
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -35856,6 +36162,164 @@ Assets {
         }
       }
       Objects {
+        Id: 15320100132995818588
+        Name: "Sci-fi Barrel 01"
+        Transform {
+          Location {
+            X: 95.6103287
+            Y: 69.9522171
+            Z: 163.827911
+          }
+          Rotation {
+            Pitch: 6.44566965
+            Yaw: -6.44650269
+            Roll: -89.9999847
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3520264132696392306
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18123443093604083044
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 7357890191225056702
+        Name: "Effects"
+        Transform {
+          Location {
+            X: 95.6103287
+            Y: 69.9522171
+            Z: 163.827911
+          }
+          Rotation {
+            Pitch: 6.44566965
+            Yaw: -6.44650269
+            Roll: -89.9999847
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3520264132696392306
+        ChildIds: 14016897243203474742
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 14016897243203474742
+        Name: "Fairy Dot Volume VFX"
+        Transform {
+          Location {
+            X: 5.34057617e-05
+            Y: -10.8797722
+            Z: 66.9022827
+          }
+          Rotation {
+            Yaw: 1.70754709e-06
+          }
+          Scale {
+            X: 0.944343746
+            Y: 1.12183654
+            Z: 1.70307958
+          }
+        }
+        ParentId: 7357890191225056702
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Secondary Color"
+            Color {
+              G: 0.272381365
+              B: 0.85800004
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 11.0761366
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 5.00285482
+          }
+          Overrides {
+            Name: "bp:Gravity"
+            Float: 10
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 1.34780359
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 4577976162687340642
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
         Id: 8171339432433017755
         Name: "Damageable Object"
         Transform {
@@ -35947,206 +36411,6 @@ Assets {
         }
       }
       Objects {
-        Id: 3338618817953964775
-        Name: "Damageable Object"
-        Transform {
-          Location {
-            X: 95.6103821
-            Y: 69.9522552
-            Z: 163.82785
-          }
-          Rotation {
-            Pitch: 6.44566965
-            Yaw: -6.44650269
-            Roll: -90
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14189356903654900526
-        ChildIds: 15320100132995818588
-        ChildIds: 7357890191225056702
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        DamageableObject {
-          DamageSettings {
-            MaxHitpoints: 50
-            StartingHitpoints: 100
-            DestroyOnDeath: true
-            DestroyOnDeathClientTemplateId {
-              Id: 2137904090696284611
-            }
-            DestroyOnDeathNetworkedTemplateId {
-              Id: 841534158063459245
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 15320100132995818588
-        Name: "Sci-fi Barrel 01"
-        Transform {
-          Location {
-            X: -8.56543295e-07
-            Y: -7.58116039e-06
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3338618817953964775
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18123443093604083044
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 7357890191225056702
-        Name: "Effects"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3338618817953964775
-        ChildIds: 14016897243203474742
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 14016897243203474742
-        Name: "Fairy Dot Volume VFX"
-        Transform {
-          Location {
-            X: 5.34057617e-05
-            Y: -10.8797722
-            Z: 66.9022827
-          }
-          Rotation {
-            Yaw: 1.70754709e-06
-          }
-          Scale {
-            X: 0.944343746
-            Y: 1.12183654
-            Z: 1.70307958
-          }
-        }
-        ParentId: 7357890191225056702
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Secondary Color"
-            Color {
-              G: 0.272381365
-              B: 0.85800004
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 11.0761366
-          }
-          Overrides {
-            Name: "bp:Density"
-            Float: 5.00285482
-          }
-          Overrides {
-            Name: "bp:Gravity"
-            Float: 10
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 1.34780359
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 4577976162687340642
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 7940052850775601025
         Name: "Exploding Barrels Damageable Object"
         Transform {
@@ -36167,7 +36431,6 @@ Assets {
         ChildIds: 10839873155128499945
         ChildIds: 5970143312102915572
         ChildIds: 13429279509518635153
-        ChildIds: 10220590019970578287
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36274,6 +36537,8 @@ Assets {
         ChildIds: 17046800607658103688
         ChildIds: 18076066498879649869
         ChildIds: 16862468919848984143
+        ChildIds: 528045750814527877
+        ChildIds: 9668377666556201948
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -36573,6 +36838,164 @@ Assets {
         }
       }
       Objects {
+        Id: 528045750814527877
+        Name: "Sci-fi Barrel 01"
+        Transform {
+          Location {
+            X: 95.6103363
+            Y: 69.9521255
+            Z: 163.827911
+          }
+          Rotation {
+            Pitch: 6.44566965
+            Yaw: -6.44650078
+            Roll: -89.9999771
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5970143312102915572
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18123443093604083044
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 9668377666556201948
+        Name: "Effects"
+        Transform {
+          Location {
+            X: 95.6103363
+            Y: 69.9521255
+            Z: 163.827911
+          }
+          Rotation {
+            Pitch: 6.44566965
+            Yaw: -6.44650078
+            Roll: -89.9999771
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5970143312102915572
+        ChildIds: 13094594155083744737
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 13094594155083744737
+        Name: "Fairy Dot Volume VFX"
+        Transform {
+          Location {
+            X: 5.34057617e-05
+            Y: -10.8797722
+            Z: 66.9022827
+          }
+          Rotation {
+            Yaw: 1.70754709e-06
+          }
+          Scale {
+            X: 0.944343746
+            Y: 1.12183654
+            Z: 1.70307958
+          }
+        }
+        ParentId: 9668377666556201948
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Secondary Color"
+            Color {
+              G: 0.272381365
+              B: 0.85800004
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 11.0761366
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 5.00285482
+          }
+          Overrides {
+            Name: "bp:Gravity"
+            Float: 10
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 1.34780359
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 4577976162687340642
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
         Id: 13429279509518635153
         Name: "Damageable Object"
         Transform {
@@ -36661,206 +37084,6 @@ Assets {
             }
             BoundsScale: 1
           }
-        }
-      }
-      Objects {
-        Id: 10220590019970578287
-        Name: "Damageable Object"
-        Transform {
-          Location {
-            X: 95.6103821
-            Y: 69.9522552
-            Z: 163.82785
-          }
-          Rotation {
-            Pitch: 6.44566965
-            Yaw: -6.44650269
-            Roll: -90
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 7940052850775601025
-        ChildIds: 528045750814527877
-        ChildIds: 9668377666556201948
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        DamageableObject {
-          DamageSettings {
-            MaxHitpoints: 50
-            StartingHitpoints: 100
-            DestroyOnDeath: true
-            DestroyOnDeathClientTemplateId {
-              Id: 2137904090696284611
-            }
-            DestroyOnDeathNetworkedTemplateId {
-              Id: 841534158063459245
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 528045750814527877
-        Name: "Sci-fi Barrel 01"
-        Transform {
-          Location {
-            X: -8.56543295e-07
-            Y: -7.58116039e-06
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10220590019970578287
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18123443093604083044
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 9668377666556201948
-        Name: "Effects"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10220590019970578287
-        ChildIds: 13094594155083744737
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 13094594155083744737
-        Name: "Fairy Dot Volume VFX"
-        Transform {
-          Location {
-            X: 5.34057617e-05
-            Y: -10.8797722
-            Z: 66.9022827
-          }
-          Rotation {
-            Yaw: 1.70754709e-06
-          }
-          Scale {
-            X: 0.944343746
-            Y: 1.12183654
-            Z: 1.70307958
-          }
-        }
-        ParentId: 9668377666556201948
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Secondary Color"
-            Color {
-              G: 0.272381365
-              B: 0.85800004
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 11.0761366
-          }
-          Overrides {
-            Name: "bp:Density"
-            Float: 5.00285482
-          }
-          Overrides {
-            Name: "bp:Gravity"
-            Float: 10
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 1.34780359
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 4577976162687340642
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -41402,7 +41625,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42439,6 +42662,24 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_ts_scf_base_wall_int_001_win_01_ref"
+      }
+    }
+    Assets {
+      Id: 10999420465528935017
+      Name: "Plane 1m - Two Sided"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_plane_1m_002"
+      }
+    }
+    Assets {
+      Id: 13044463944252033083
+      Name: "Glass 01 (no distortion)"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_basic_glass_001"
       }
     }
     Assets {
