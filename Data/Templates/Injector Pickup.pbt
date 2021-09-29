@@ -18,7 +18,6 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 9660811702361949473
         ChildIds: 2634654685056222309
-        ChildIds: 16629349635316798192
         ChildIds: 14791157168564996622
         WantsNetworking: true
         Collidable_v2 {
@@ -171,48 +170,6 @@ Assets {
         }
       }
       Objects {
-        Id: 16629349635316798192
-        Name: "InjectorPickupServer"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 16637913083828318394
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Trigger"
-            ObjectReference {
-              SubObjectId: 2634654685056222309
-            }
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 12063179562271564395
-          }
-        }
-      }
-      Objects {
         Id: 14791157168564996622
         Name: "Effects"
         Transform {
@@ -348,5 +305,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 100
+  SerializationVersion: 98
+  DirectlyPublished: true
 }

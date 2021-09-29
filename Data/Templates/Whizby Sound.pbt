@@ -55,6 +55,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 100
+  SerializationVersion: 98
+  DirectlyPublished: true
   VirtualFolderPath: "Core Content"
 }

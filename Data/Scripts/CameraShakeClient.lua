@@ -1,3 +1,6 @@
+-- Basic screen shake effect. I believe Scav has one on CC if you are looking
+-- for something a little more advanced. -- CommanderFoo
+
 -- The max the camera can move in the y and z axis
 local maxOffset = .5
 

@@ -15,8 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15708467939281100699
-        ChildIds: 860664015803284404
+        ParentId: 4781671109827199097
         ChildIds: 16973427722735305641
         ChildIds: 4796257732949939545
         ChildIds: 16038886225363227872
@@ -34,49 +33,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 860664015803284404
-        Name: "ShieldGeneratorServer"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Yaw: -179.999969
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 2498656413715139508
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Trigger"
-            ObjectReference {
-              SubObjectId: 4796257732949939545
-            }
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 8881215439123804263
-          }
         }
       }
       Objects {
@@ -190,7 +146,6 @@ Assets {
         ChildIds: 13458784629231137959
         ChildIds: 11620458686701108955
         ChildIds: 16942550032453857353
-        ChildIds: 5755705326420436728
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -802,65 +757,6 @@ Assets {
           IsAttenuationEnabled: true
         }
       }
-      Objects {
-        Id: 5755705326420436728
-        Name: "ShieldGeneratorClient"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 16038886225363227872
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Sound"
-            ObjectReference {
-              SubObjectId: 18214187332734639655
-            }
-          }
-          Overrides {
-            Name: "cs:Effect"
-            ObjectReference {
-              SubObjectId: 15781037969543660556
-            }
-          }
-          Overrides {
-            Name: "cs:Trigger"
-            ObjectReference {
-              SubObjectId: 4796257732949939545
-            }
-          }
-          Overrides {
-            Name: "cs:Mast"
-            ObjectReference {
-              SubObjectId: 13563632397439224465
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 15018966891438404422
-          }
-        }
-      }
     }
     Assets {
       Id: 10887845554140079059
@@ -948,5 +844,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 100
+  SerializationVersion: 98
+  DirectlyPublished: true
 }
