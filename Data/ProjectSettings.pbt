@@ -1,4 +1,2 @@
-LeaderboardConfigs {
-}
-MaxPlayers: 4
+MaxPlayers: 3
 MainScene: "Main"

@@ -1,6 +1,6 @@
 local INJECTOR = script:GetCustomProperty("Injector"):WaitForObject()
 local HEALTH_BAR = script:GetCustomProperty("HealthBar"):WaitForObject()
-local HEALTH_PULSE_CURVE = script:GetCustomProperty("HealthPulseCruve")
+local HEALTH_PULSE_CURVE = script:GetCustomProperty("HealthPulseCurve")
 local TRANSITION = script:GetCustomProperty("Transition"):WaitForObject()
 local TRANSITION_CURVE = script:GetCustomProperty("TransitionCurve")
 
@@ -52,7 +52,7 @@ local function UpdateGameState(generatorsDisabledIDStr)
 	fadeOutTransition = true
 end
 
--- Check to see when the players injectors resourcec changes to the
+-- Check to see when the players injectors resource changes to the
 -- UI can also be updated.
 local function ResourceChanged(player, resourceName, newAmount)
 	if resourceName == "injectors" then

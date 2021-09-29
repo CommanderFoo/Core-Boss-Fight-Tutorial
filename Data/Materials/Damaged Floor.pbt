@@ -2,7 +2,7 @@ Assets {
   Id: 13421444546166659295
   Name: "Damaged Floor"
   PlatformAssetType: 13
-  SerializationVersion: 98
+  SerializationVersion: 100
   CustomMaterialAsset {
     BaseMaterialId: 5394305057220339033
     ParameterOverrides {

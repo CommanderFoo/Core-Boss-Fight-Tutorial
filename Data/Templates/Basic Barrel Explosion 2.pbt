@@ -1,6 +1,6 @@
 Assets {
   Id: 2137904090696284611
-  Name: "Basic Barrel Explosion Injector"
+  Name: "Basic Barrel Explosion 2"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -206,5 +206,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

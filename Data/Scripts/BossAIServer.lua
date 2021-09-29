@@ -1,6 +1,6 @@
 local ACTIVITY_HANDLER = script.parent
-local BOSS = script:GetCustomProperty("Boss"):WaitForObject()
-local SHOOT_TRIGGER = script:GetCustomProperty("ShootTrigger"):WaitForObject()
+local BOSS_GEO = script:GetCustomProperty("BossGeo"):WaitForObject()
+local SHOOT_PERIMETER = script:GetCustomProperty("ShootPerimeter"):WaitForObject()
 local PROJECTILE = script:GetCustomProperty("Projectile")
 local SHOOT_POSITION = script:GetCustomProperty("ShootPosition"):WaitForObject()
 local DAMAGEABLE = script:GetCustomProperty("Damageable"):WaitForObject()
@@ -40,6 +40,8 @@ local isCharging = false
 -- Keep track of how many generators have been disabled.
 local generatorsDisabled = 0
 
+local sentUpdateBossHealthBar = false
+
 -- Get a random target.
 local function GetRandomTarget()
 	return shootTargets[math.random(#shootTargets)]
@@ -56,7 +58,7 @@ end
 
 local function OnImpact(projectile, obj, hit)
 	if Object.IsValid(obj) then
-		local results = World.FindObjectsOverlappingSphere(hit:GetImpactPosition(), 500, { ignoreObjects = {BOSS}})
+		local results = World.FindObjectsOverlappingSphere(hit:GetImpactPosition(), 500, { ignoreObjects = {BOSS_GEO}})
 		
 		--CoreDebug.DrawSphere(hit:GetImpactPosition(), 500, { duration = 1 })
 
@@ -102,12 +104,12 @@ local function ShootProjectile()
 	-- Need to check here if the boss object (collider and geo) is
 	-- valid, as it may have been destroyed.
 
-	if not Object.IsValid(BOSS) then
+	if not Object.IsValid(BOSS_GEO) then
 		return
 	end
 
 	-- Get the direction to shoot the projectile.
-	local direction = BOSS:GetWorldRotation() * Vector3.FORWARD
+	local direction = BOSS_GEO:GetWorldRotation() * Vector3.FORWARD
 	local theProjectile = Projectile.Spawn(PROJECTILE, startPos, direction)
 
 	theProjectile.speed = 7000
@@ -129,7 +131,7 @@ end
 -- When returning back to idle, reset the AI rotation
 function activities.idle.start(activity, deltaTime)
 	Task.Wait(.5)
-	BOSS:RotateTo(Rotation.New(0, 0, 0), 2)
+	BOSS_GEO:RotateTo(Rotation.New(0, 0, 0), 2)
 end
 
 -- If the AI has targets in the perimeter, set the priority higher
@@ -171,7 +173,7 @@ function activities.shoot.tickHighestPriority(activity, deltaTime)
 				target = GetRandomTarget()
 				
 				if Object.IsValid(target) then
-					BOSS:LookAtContinuous(target, false, 2.0)
+					BOSS_GEO:LookAtContinuous(target, false, 2.0)
 				end
 
 				shootElapsed = 0
@@ -186,7 +188,7 @@ end
 -- a random target inside the perimenter.
 function activities.shoot.start(activity, deltaTime)
 	local tmpTarget = GetRandomTarget()
-	BOSS:LookAtContinuous(tmpTarget, false, .5)
+	BOSS_GEO:LookAtContinuous(tmpTarget, false, .5)
 	Task.Wait(1)
 	target = tmpTarget
 	tmpTarget = nil
@@ -215,8 +217,8 @@ function OnPlayerLeftShoot(trigger, player)
 			if value == player then
 				table.remove(shootTargets, index)
 
-				if(target == player and Object.IsValid(BOSS)) then
-					BOSS:StopRotate()
+				if(target == player and Object.IsValid(BOSS_GEO)) then
+					BOSS_GEO:StopRotate()
 				end
 
 				break
@@ -235,8 +237,6 @@ local function GeneratorDisabled()
 		Events.BroadcastToAllPlayers("EnableBossHealthBar")
 	end
 end
-
-local sentUpdateBossHealthBar = false
 
 -- When the AI receives damage, broadcast that to the player
 -- who caused the damage.
@@ -262,8 +262,8 @@ end
 DAMAGEABLE.damagedEvent:Connect(OnDamaged)
 DAMAGEABLE.diedEvent:Connect(OnDied)
 
-SHOOT_TRIGGER.beginOverlapEvent:Connect(OnPlayerEnterShoot)
-SHOOT_TRIGGER.endOverlapEvent:Connect(OnPlayerLeftShoot)
+SHOOT_PERIMETER.beginOverlapEvent:Connect(OnPlayerEnterShoot)
+SHOOT_PERIMETER.endOverlapEvent:Connect(OnPlayerLeftShoot)
 
 -- Loop through the activities table and add them to
 -- the activity handler

@@ -1,18 +1,18 @@
-GameId: "55a07a5248c548c8951559c1b701b788"
-ClientVersion: "1.56260.555-test-s"
-Name: "Boss Tutorial - Example"
-Description: "Full project for the Boss Tutorial for docs (WIP)."
-MaxPlayers: 4
+GameId: "15fa6bcbb4354b0db17e38fb46ceeb4c"
+ClientVersion: "1.0.213-prod-s"
+Name: "Boss Fight Tutorial"
+Description: "This is the full project for the Boss Fight tutorial on Core docs."
+MaxPlayers: 3
+IsOpenForEdit: true
 Tags: "Action"
-Tags: "Cooperative"
 Tags: "Scifi"
-ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE_Test\\Saved\\Maps\\Core-Boss-Tutorial\\Screenshots\\Main.png"
-ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE_Test\\Saved\\Maps\\Core-Boss-Tutorial\\Screenshots\\3.png"
-ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE_Test\\Saved\\Maps\\Core-Boss-Tutorial\\Screenshots\\2.png"
-ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE_Test\\Saved\\Maps\\Core-Boss-Tutorial\\Screenshots\\1.png"
-OwnerId: "e8ad17ea6e7e4fa5a245d2e1942b7654"
+Tags: "Multiplayer"
+Tags: "Cooperative"
+ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Boss Fight Full\\Screenshots\\Main.png"
+ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Boss Fight Full\\Screenshots\\3.png"
+ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Boss Fight Full\\Screenshots\\2.png"
+OwnerId: "93d6eaf2514940a08c5481a4c03c1ee3"
 SerializationVersion: 1
-PublishedState: Public
 SceneNameToSceneIdMap {
   key: "Main"
   value: "d0c346e0482efa6deed1f8ba52a53846"

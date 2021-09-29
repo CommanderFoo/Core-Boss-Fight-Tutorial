@@ -1,5 +1,5 @@
 Assets {
-  Id: 11968684115206234415
+  Id: 746367367831655269
   Name: "WeaponShellEjectionEffectClient"
   PlatformAssetType: 3
   TextAsset {
@@ -12,7 +12,7 @@ Assets {
       Overrides {
         Name: "cs:ShellSound"
         AssetReference {
-          Id: 841534158063459245
+          Id: 15197985150450883762
         }
       }
       Overrides {
@@ -45,6 +45,6 @@ Assets {
       }
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   VirtualFolderPath: "Core Content"
 }

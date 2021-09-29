@@ -8,6 +8,7 @@ local canTickHealth = false
 -- When the boss can be hurt, the health bars are set to yellow
 -- to indicate that it can take damage.
 local function EnableHealthBar()
+	print("ok")
 	HEALTHBAR:SetFillColor(Color.YELLOW)
 	BOSS_NAME:SetColor(Color.YELLOW)
 	SKULL_BACKGROUND:SetColor(Color.YELLOW)

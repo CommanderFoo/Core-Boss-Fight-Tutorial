@@ -1,6 +1,6 @@
 Assets {
-  Id: 8881215439123804263
-  Name: "ShieldGeneratorServer"
+  Id: 15059024611427257222
+  Name: "NewScript"
   PlatformAssetType: 3
   TextAsset {
   }

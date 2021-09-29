@@ -1,5 +1,5 @@
 Assets {
-  Id: 16975801195317677333
+  Id: 11416796997547344820
   Name: "WeaponLowAmmoFeedbackClient"
   PlatformAssetType: 3
   TextAsset {
@@ -7,7 +7,7 @@ Assets {
       Overrides {
         Name: "cs:LowAmmoSound"
         AssetReference {
-          Id: 841534158063459245
+          Id: 16064653477604779480
         }
       }
       Overrides {
@@ -16,6 +16,6 @@ Assets {
       }
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   VirtualFolderPath: "Core Content"
 }
