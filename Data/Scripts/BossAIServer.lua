@@ -60,7 +60,7 @@ local function OnImpact(projectile, obj, hit)
 	if Object.IsValid(obj) then
 		local results = World.FindObjectsOverlappingSphere(hit:GetImpactPosition(), 500, { ignoreObjects = {BOSS_GEO}})
 		
-		--CoreDebug.DrawSphere(hit:GetImpactPosition(), 500, { duration = 1 })
+		CoreDebug.DrawSphere(hit:GetImpactPosition(), 500, { duration = 1 })
 
 		for index, object in ipairs(results) do
 			if Object.IsValid(object) then
