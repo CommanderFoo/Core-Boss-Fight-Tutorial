@@ -43,6 +43,9 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 9957406294679855802
@@ -114,6 +117,12 @@ Assets {
             BoundsScale: 1
           }
         }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     Assets {
@@ -130,5 +139,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 100
+  SerializationVersion: 110
 }

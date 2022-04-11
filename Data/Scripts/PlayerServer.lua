@@ -64,22 +64,23 @@ local function OnPlayerJoined(player)
 
 	players[player.id] = {
 
-		pressedEvt = player.bindingPressedEvent:Connect(function(obj, binding)
-			if binding == "ability_feet" then
-				player.maxWalkSpeed = 1200
-			end
-		end),
-	
-		releasedEvt = player.bindingReleasedEvent:Connect(function(obj, binding) 
-			if binding == "ability_feet" then
-				player.maxWalkSpeed = 640
-			end
-		end),
-
 		weapon = weapon
+
 	}
 
 	DisableWeapon(player)
+end
+
+local function OnActionPressed(player, action)
+	if action == "Sprint" then
+		player.maxWalkSpeed = 1200
+	end
+end
+
+local function OnActionReleased(player, action)
+	if action == "Sprint" then
+		player.maxWalkSpeed = 640
+	end
 end
 
 local function UpdateGameState(player)
@@ -96,14 +97,6 @@ end
 
 -- Clean up the events when a player leaves
 local function OnPlayerLeft(player)
-	if players[player.id].pressedEvt.isConnected then
-		players[player.id].pressedEvt:Disconnect()
-	end
-	
-	if players[player.id].releasedEvt.isConnected then
-		players[player.id].releasedEvt:Disconnect()
-	end
-
 	players[player.id] = nil
 end
 
@@ -121,3 +114,6 @@ Events.Connect("EnableWeapon", EnableWeapon)
 Events.Connect("DisableWeapon", DisableWeapon)
 Events.Connect("GeneratorDisabled", GeneratorDisabled)
 Events.ConnectForPlayer("ClientReady", UpdateGameState)
+
+Input.actionPressedEvent:Connect(OnActionPressed)
+Input.actionReleasedEvent:Connect(OnActionReleased)

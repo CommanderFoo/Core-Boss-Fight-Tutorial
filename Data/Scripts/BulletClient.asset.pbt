@@ -3,7 +3,9 @@ Assets {
   Name: "BulletClient"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+    }
   }
-  SerializationVersion: 100
+  SerializationVersion: 110
   VirtualFolderPath: "Core Content"
 }

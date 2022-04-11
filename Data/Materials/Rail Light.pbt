@@ -2,7 +2,7 @@ Assets {
   Id: 2384159912045839068
   Name: "Rail Light"
   PlatformAssetType: 13
-  SerializationVersion: 100
+  SerializationVersion: 110
   CustomMaterialAsset {
     BaseMaterialId: 5394305057220339033
     ParameterOverrides {

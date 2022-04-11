@@ -50,6 +50,9 @@ Assets {
             IsAttenuationEnabled: true
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
     }
     Assets {
@@ -66,6 +69,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 100
+  SerializationVersion: 110
   VirtualFolderPath: "Core Content"
 }

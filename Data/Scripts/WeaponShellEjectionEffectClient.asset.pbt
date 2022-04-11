@@ -45,6 +45,6 @@ Assets {
       }
     }
   }
-  SerializationVersion: 100
+  SerializationVersion: 110
   VirtualFolderPath: "Core Content"
 }
